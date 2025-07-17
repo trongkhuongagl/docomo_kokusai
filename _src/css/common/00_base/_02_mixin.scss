@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@use "_01_config" as *;
+
+// Mixin
+
+
+@mixin mq($size) {
+  @if $size == 'small' {
+    @media screen and (max-width: $break-small + px) {
+      @content;
+    }
+  }
+  @else if $size == 'medium' {
+    @media screen and (max-width: $break-medium + px) {
+      @content;
+    }
+  }
+  @else if $size == 'large' {
+    @media screen and (max-width: $break-large + px) {
+      @content;
+    }
+  }
+}
+
+@mixin mq-gt($size) {
+  @if $size == 'small' {
+    @media screen and (min-width: $break-small + 1 + px) {
+      @content;
+    }
+  }
+  @else if $size == 'medium' {
+    @media print,screen and (min-width: $break-medium + 1 + px) {
+      @content;
+    }
+  }
+  @else if $size == 'large' {
+    @media print,screen and (min-width: $break-large + 1 + px) {
+      @content;
+    }
+  }
+}
+
+@mixin fz-m($size) {
+  font-size: calc($size / 1140 * 100vw);
+}
+
+@mixin fz-s($size) {
+  font-size: calc($size / 767 * 100vw);
+}
+
+
+
+@mixin hover {
+  transition: opacity .2s;
+  &:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+}
+
+@mixin hover-ico {
+  .e-ico {
+    &::before {
+      opacity: 0;
+    }
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+
+@mixin ico {
+  position: relative;
+  display: inline-block;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s;
+  }
+  &::after {
+    opacity: 0;
+  }
+  &.is-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+}
+
+
+@function vw-xl($value) {
+	@return calc($value / 1440 * 100vw);
+}
+
+@function vw-m($value) {
+	@return calc($value / 1140 * 100vw);
+}
+
+@function vw-s($value) {
+	@return calc($value / 800 * 100vw);
+}

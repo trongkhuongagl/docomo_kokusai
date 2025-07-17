@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// font
+//
+
+
+
+
+.font_red {
+  color: $color-red;
+}
+.font_em {
+  color: $color-red;
+  font-weight: 900;
+}
+.font_w9 {
+  font-weight: 900;
+}
+
+.font_num {
+  font-family: "Oswald", sans-serif;
+}

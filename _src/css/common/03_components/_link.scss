@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// link
+//
+
+.link_txt {
+  color: $color-red;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.link_txt_b {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

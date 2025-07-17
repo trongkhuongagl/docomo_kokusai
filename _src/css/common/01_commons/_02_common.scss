@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// common
+//
+
+body {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: "Noto Sans JP", sans-serif;
+  font-feature-settings: "palt";
+  -webkit-text-size-adjust: 100%;
+  @include mq('large') {
+    font-size: 16px;
+  }
+  @include mq('medium') {
+    @include fz-m(16);
+  }
+  @include mq('small') {
+    @include fz-s(36);
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+sup {
+  font-size: 75%;
+  vertical-align: top;
+}
+
+sub {
+  font-size: 75%;
+  vertical-align: bottom;
+}

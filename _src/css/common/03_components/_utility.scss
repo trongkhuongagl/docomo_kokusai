@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// utility
+//
+
+
+
+
+.u-nobr {
+  display: inline-block;
+}
+
+
+.sp {
+  display: none;
+}
+@include mq('small') {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  br.sp,
+  img.sp,
+  span.sp {
+    display: inline;
+  }
+  table.sp {
+    display: table;
+  }
+}

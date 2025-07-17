@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// shop
+//
+
+
+// .shop {
+//   background: #faf4e8;
+//   padding: 80px;
+// }
+// .shop_inr {
+//   max-width: 1000px;
+//   margin: 0 auto;
+// }
+// .shop_copy {
+//   text-align: center;
+//   font-size: 26px;
+//   line-height: 1.2;
+//   font-weight: 900;
+//   margin: 0 0 30px;
+// }
+// .shop_btn {
+//   text-align: center;
+// }
+// .shop_btn_a {
+//   position: relative;
+//   display: inline-flex;
+//   width: 450px;
+//   min-height: 90px;
+//   background: $color-red;
+//   border: 2px solid $color-red;
+//   color: #fff;
+//   border-radius: 45px;
+//   overflow: hidden;
+//   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.15);
+//   transition: opacity .2s;
+//   &:hover {
+//     opacity: 0.7;
+//     text-decoration: none;
+//   }
+//   // &:hover {
+//   //   // @include hover-ico;
+//   // }
+// }
+
+// .shop_btn_img {
+//   width: 120px;
+//   background: #fff;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .shop_btn_main {
+//   flex: 1;
+//   display: flex;
+//   align-items: center;
+//   text-align-last: left;
+//   padding: 10px 25px;
+// }
+// .shop_btn_txt1 {
+//   font-size: 18px;
+//   line-height: 1;
+//   font-weight: bold;
+// }
+// .shop_btn_txt2 {
+//   font-size: 26px;
+//   line-height: 1;
+//   font-weight: bold;
+//   margin: 5px 0 0;
+// }
+// .shop_btn_ico {
+//   position: absolute;
+//   top: 50%;
+//   right: 10px;
+//   transform: translate(0, -50%);
+
+// }

@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "browser-sync": "^3.0.2",
+    "css-mqpacker": "^7.0.0",
+    "gsap": "^3.12.5",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.7.1",
+    "npm": "^10.5.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "name": "poikatsu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "volta": {
+    "node": "18.19.1"
+  }
+}
