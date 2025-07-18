@@ -101,5 +101,5 @@
 }
 
 @function vw-s($value) {
-	@return calc($value / 800 * 100vw);
+	@return calc($value / 767 * 100vw);
 }

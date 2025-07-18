@@ -10,14 +10,9 @@
 @use "common/03_components/_link" as link;
 @use "common/03_components/_utility" as utility;
 
+@use "common/04_modules/_header" as header;
 @use "common/04_modules/_footer" as footer;
-@use "common/04_modules/_slick" as slick;
 
 @use "common/05_index/_00_index" as index;
-@use "common/05_index/_01_hero" as hero;
-@use "common/05_index/_02_movie" as movie;
-@use "common/05_index/_03_start" as start;
-// @use "common/05_index/_04_chart" as chart;
-@use "common/05_index/_05_plan" as plan;
-// @use "common/05_index/_05_expe" as expe;
-// @use "common/05_index/_06_shop" as shop;
+@use "common/05_index/_01_mv" as mv;
+@use "common/05_index/_02_tabs" as tabs;

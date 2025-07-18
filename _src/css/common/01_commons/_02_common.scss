@@ -7,7 +7,7 @@
 //
 
 body {
-  color: #000;
+  color: #333333;
   font-size: 16px;
   line-height: 1.75;
   font-family: "Noto Sans JP", sans-serif;
@@ -20,7 +20,7 @@ body {
     @include fz-m(16);
   }
   @include mq('small') {
-    @include fz-s(36);
+    font-size: 12px;
   }
 }
 
@@ -48,4 +48,35 @@ sup {
 sub {
   font-size: 75%;
   vertical-align: bottom;
+}
+
+.f-roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.c-img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.l-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.c-inner {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include mq('medium') {
+    padding: 0 50px;
+  }
+
+  @include mq('small') {
+    padding: 0 20px;
+  }
 }

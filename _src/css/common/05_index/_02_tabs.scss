@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// Tabs Content
+//
+
+.tab {
+  &_heading {
+    max-width: 856px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 19px;
+    .item {
+      &.is-blue {
+        border-bottom: 1px solid #2A238F;
+        .text {
+          color: #2A238F;
+        }
+      }
+      &.is-red {
+        border-bottom: 1px solid #E70626;
+        .text {
+          color: #E70626;
+        }
+      }
+      width: 226px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+    .text {
+      &.is-small {
+        font-size: 18px;
+      }
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.1;
+      text-align: center;
+    }
+  }
+  &_button {
+    &_wrap {
+      display: flex;
+      align-items: center;
+    }
+    &.active {
+      border-color: transparent;
+    }
+    &.is-01 {
+      img {
+        width: 228px;
+      }
+      &:hover,
+      &.active {
+        background-color: #CFEAFF;
+      }
+    }
+    &.is-02 {
+      img {
+        width: 212px;
+      }
+      &:hover,
+      &.active {
+        background-color: #CFEAFF;
+      }
+    }
+    &.is-03 {
+      img {
+        width: 236px;
+      }
+      &:hover,
+      &.active {
+        background-color: #FFDADA;
+      }
+      margin-left: auto;
+    }
+    width: 403px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: #000;
+    border-radius: 10px 10px 0 0;
+    margin-left: -1px;
+    transition: all 0.3s;
+  }
+  &_content {
+    &.active {
+      display: block;
+    }
+    display: none;
+    background-color: #fff;
+    .main_image {
+      margin-top: -1px;
+    }
+  }
+}
