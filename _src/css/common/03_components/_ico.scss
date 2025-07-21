@@ -15,11 +15,11 @@
   max-height: 20px;
   vertical-align: -0.1em;
   &::before {
-    background: url("/special_contents/poikatsu/images/ico_blank.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_blank.svg") no-repeat 50% 50%;
     background-size: 100% auto;
   }
   &::after {
-    background: url("/special_contents/poikatsu/images/ico_blank_wht.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_blank_wht.svg") no-repeat 50% 50%;
     background-size: 100% auto;
   }
   // @include mq('small') {
@@ -36,7 +36,7 @@
   max-height: 20px;
   vertical-align: -0.2em;
   &::before {
-    background: url("/special_contents/poikatsu/images/ico_blank_wht.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_blank_wht.svg") no-repeat 50% 50%;
     background-size: 100% auto;
   }
   // @include mq('small') {
@@ -51,7 +51,7 @@
   height: 20px;
   vertical-align: -0.2em;
   &::before {
-    background: url("/special_contents/poikatsu/images/ico_open.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_open.svg") no-repeat 50% 50%;
     background-size: 100% auto;
   }
   @include mq('small') {
@@ -68,11 +68,11 @@
   max-height: 18px;
   vertical-align: -0.15em;
   &::before {
-    background: url("/special_contents/poikatsu/images/ico_arrow_d.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_arrow_d.svg") no-repeat 50% 50%;
     background-size: 100% auto;
   }
   &::after {
-    background: url("/special_contents/poikatsu/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
     background-size: 100% auto;
   }
   @include mq('small') {
@@ -89,11 +89,11 @@
   max-height: 18px;
   vertical-align: -0.1em;
   &::before {
-    background: url("/special_contents/poikatsu/images/ico_nav_arrow.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_nav_arrow.svg") no-repeat 50% 50%;
     background-size: auto 100%;
   }
   // &::after {
-  //   background: url("/special_contents/poikatsu/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
+  //   background: url("/special_contents/kokusai/docomo_kokusai/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
   //   background-size: 100% auto;
   // }
   @include mq('small') {
@@ -110,12 +110,12 @@
   max-height: 18px;
   vertical-align: -0.1em;
   &::before {
-    background: url("/special_contents/poikatsu/images/ico_nav_arrow.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_nav_arrow.svg") no-repeat 50% 50%;
     background-size: auto 100%;
     transform: rotate(-90deg);
   }
   // &::after {
-  //   background: url("/special_contents/poikatsu/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
+  //   background: url("/special_contents/kokusai/docomo_kokusai/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
   //   background-size: 100% auto;
   // }
   @include mq('small') {
@@ -132,11 +132,11 @@
   max-height: 18px;
   vertical-align: -0.15em;
   &::before {
-    background: url("/special_contents/poikatsu/images/ico_nav_arw_blk.svg") no-repeat 50% 50%;
+    background: url("/special_contents/kokusai/docomo_kokusai/images/ico_nav_arw_blk.svg") no-repeat 50% 50%;
     background-size: auto 100%;
   }
   // &::after {
-  //   background: url("/special_contents/poikatsu/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
+  //   background: url("/special_contents/kokusai/docomo_kokusai/images/ico_arrow_d_wht.svg") no-repeat 50% 50%;
   //   background-size: 100% auto;
   // }
   @include mq('small') {

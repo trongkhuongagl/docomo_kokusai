@@ -5,15 +5,18 @@ const uglify      = require('gulp-uglify');
 const postcss     = require('gulp-postcss');
 const mqpacker    = require('css-mqpacker');
 const concat      = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
 // const htmlhint    = require('gulp-htmlhint');
 
 function css() {
-  return src('_src/**/*.scss',{ sourcemaps: false })
-    .pipe(sass({outputStyle : 'compressed'}).on('error', sass.logError)) //expanded compressed
+  return src('_src/**/*.scss', { sourcemaps: true })
+    .pipe(sourcemaps.init()) // khởi tạo sourcemap
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError)) // dùng expanded để dễ đọc
     .pipe(postcss([
       mqpacker()
-      ]))
-    .pipe(dest('./', { sourcemaps: './sourcemaps' }))
+    ]))
+    .pipe(sourcemaps.write('./sourcemaps')) // ghi ra sourcemap
+    .pipe(dest('./', { sourcemaps: '.' })); // ghi file .map kế bên file css
 }
 
 function js() {

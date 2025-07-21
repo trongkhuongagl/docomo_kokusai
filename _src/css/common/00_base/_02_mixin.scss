@@ -15,6 +15,11 @@
       @content;
     }
   }
+  @else if $size == 'medium2' {
+    @media screen and (min-width: 768px) and  (max-width: 1439px){
+      @content;
+    }
+  }
   @else if $size == 'large' {
     @media screen and (max-width: $break-large + px) {
       @content;
@@ -41,11 +46,11 @@
 }
 
 @mixin fz-m($size) {
-  font-size: calc($size / 1140 * 100vw);
+  font-size: calc($size / 1439 * 100vw);
 }
 
 @mixin fz-s($size) {
-  font-size: calc($size / 767 * 100vw);
+  font-size: calc($size / 393 * 100vw);
 }
 
 
@@ -97,9 +102,9 @@
 }
 
 @function vw-m($value) {
-	@return calc($value / 1140 * 100vw);
+	@return calc($value / 1439 * 100vw);
 }
 
 @function vw-s($value) {
-	@return calc($value / 767 * 100vw);
+	@return calc($value / 393 * 100vw);
 }

@@ -7,14 +7,4 @@
 //
 .sec_mv {
   padding-top: 103px;
-  .sub_image {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 51px 0;
-    
-    @include mq('small') {
-      padding: 54px 21px;
-    }
-  }
 }

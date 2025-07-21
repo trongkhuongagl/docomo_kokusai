@@ -23,5 +23,8 @@
   "description": "",
   "volta": {
     "node": "18.19.1"
+  },
+  "devDependencies": {
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
