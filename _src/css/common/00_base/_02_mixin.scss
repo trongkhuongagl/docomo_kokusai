@@ -2,26 +2,19 @@
 @use "_01_config" as *;
 
 // Mixin
-
-
 @mixin mq($size) {
   @if $size == 'small' {
-    @media screen and (max-width: $break-small + px) {
+    @media screen and (max-width: #{ $break-small }px) {
       @content;
     }
   }
   @else if $size == 'medium' {
-    @media screen and (max-width: $break-medium + px) {
-      @content;
-    }
-  }
-  @else if $size == 'medium2' {
-    @media screen and (min-width: 768px) and  (max-width: 1439px){
+    @media screen and (max-width: #{ $break-medium }px) {
       @content;
     }
   }
   @else if $size == 'large' {
-    @media screen and (max-width: $break-large + px) {
+    @media screen and (max-width: #{ $break-large }px) {
       @content;
     }
   }
@@ -29,17 +22,17 @@
 
 @mixin mq-gt($size) {
   @if $size == 'small' {
-    @media screen and (min-width: $break-small + 1 + px) {
+    @media screen and (min-width: #{ $break-small + 1 }px) {
       @content;
     }
   }
   @else if $size == 'medium' {
-    @media print,screen and (min-width: $break-medium + 1 + px) {
+    @media print, screen and (min-width: #{ $break-medium + 1 }px) {
       @content;
     }
   }
   @else if $size == 'large' {
-    @media print,screen and (min-width: $break-large + 1 + px) {
+    @media print, screen and (min-width: #{ $break-large + 1 }px) {
       @content;
     }
   }
@@ -53,7 +46,17 @@
   font-size: calc($size / 393 * 100vw);
 }
 
+@function vw-l($value) {
+	@return calc($value / 1440 * 100vw);
+}
 
+@function vw-m($value) {
+	@return calc($value / 1439 * 100vw);
+}
+
+@function vw-s($value) {
+	@return calc($value / 393 * 100vw);
+}
 
 @mixin hover {
   transition: opacity .2s;
@@ -74,7 +77,6 @@
   }
 }
 
-
 @mixin ico {
   position: relative;
   display: inline-block;
@@ -94,17 +96,4 @@
     pointer-events: none;
     opacity: 0.4;
   }
-}
-
-
-@function vw-xl($value) {
-	@return calc($value / 1440 * 100vw);
-}
-
-@function vw-m($value) {
-	@return calc($value / 1439 * 100vw);
-}
-
-@function vw-s($value) {
-	@return calc($value / 393 * 100vw);
 }

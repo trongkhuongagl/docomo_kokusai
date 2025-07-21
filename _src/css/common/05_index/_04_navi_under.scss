@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// Navi Under
+//
+.navi_under {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  &.active {
+    display: flex;
+  }
+
+  @include mq('small') {
+    height: vw-s(60);
+  }
+  &_wrap {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq('small') {
+      padding: 0 vw-s(10);
+    }
+
+    .button {
+      &s {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        @include mq('small') {
+          gap: vw-s(10);
+        }
+      }
+      &.is-blue {
+        background-color: #2A238F;
+        .link {
+          &::after {
+            width: 12px;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.98438 2.4751L9.01562 10.4751L1.98438 18.4751' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  
+            @include mq('small') {
+              width: vw-s(9);
+              height: vw-s(16);
+            }
+          }
+        }
+        &:hover {
+          background-color: #7E77E9;
+        }
+      }
+      &.is-red {
+        background-color: #CC0033;
+        .link {
+          &::after {
+            width: 21px;
+            height: 15px;
+            background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.67139' y='0.75' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M0.857117 4.49268V13.7498H17.0571' stroke='white'/%3E%3C/svg%3E%0A");
+  
+            @include mq('small') {
+              width: vw-s(19);
+              height: vw-s(13);
+            }
+          }
+        }
+        &:hover {
+          background-color: #EA6486;
+        }
+      }
+      width: 371px;
+      border-radius: 40px;
+      color: #fff;
+      transition: all 0.3s;
+
+      @include mq('small') {
+        width: 50%;
+      }
+    }
+    .link {
+      width: 100%;
+      height: 100%;
+      padding: 23px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: 700;
+      gap: 10px;
+      &::after {
+        display: inline-block;
+        content: '';
+        background-position: center;
+        background-size: cover;
+        flex-shrink: 0;
+      }
+
+      @include mq('small') {
+        @include fz-s(12);
+        padding: vw-s(15);
+        gap: vw-s(10);
+      }
+    }
+  }
+}

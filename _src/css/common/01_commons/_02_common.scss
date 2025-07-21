@@ -7,19 +7,16 @@
 //
 
 body {
-  color: #333333;
-  font-size: 16px;
-  line-height: 1.4;
   font-family: "Noto Sans JP", sans-serif;
-  font-feature-settings: "palt";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-optical-sizing: auto;
+  font-style: normal;
   -webkit-text-size-adjust: 100%;
+  color: #333333;
   overflow-x: hidden;
-  @include mq('large') {
-    font-size: 16px;
-  }
-  @include mq('medium') {
-    @include fz-m(16);
-  }
+
   @include mq('small') {
     @include fz-s(12);
   }
@@ -77,11 +74,27 @@ sub {
   width: 100%;
   margin: 0 auto;
 
-  @include mq('medium2') {
-    max-width: vw-m(1240);
-  }
-
   @include mq('small') {
     padding: 0  vw-s(20);
+  }
+}
+
+/* Scale layout */
+@include mq-gt('small') {
+  html, body {
+    min-width: #{ $break-large }px;
+  }
+}
+
+/* js animation up */
+.js-anima-up {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  will-change: transform, opacity;
+
+  &-on {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

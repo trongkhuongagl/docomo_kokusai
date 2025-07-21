@@ -6,16 +6,9 @@
 //
 .sec_content {
   background: url(/special_contents/kokusai/docomo_kokusai/images/bg.png) repeat;
-  padding-top: 92px;
-  padding-bottom: 107px;
+  padding-top: 96px;
 
   @include mq('small') {
     padding-top: vw-s(61);
-    padding-bottom: vw-s(114);
-  }
-
-  @include mq('medium2') {
-    padding-top: vw-m(61);
-    padding-bottom: vw-m(114);
   }
 }
