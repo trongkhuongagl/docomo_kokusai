@@ -19,6 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
       if (navi) {
         navi.classList.add('active');
       }
+
+      // Add class to corresponding footer
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.classList.remove('is-01', 'is-02', 'is-03');
+        const footerClass = `is-0${index + 1}`;
+        footer.classList.add(footerClass);
+      }
     });
   });
 });
@@ -51,3 +59,32 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
+
+// Navigation Under
+document.addEventListener('DOMContentLoaded', () => {
+  const naviContainer = document.querySelector('.navi_under_container');
+  const triggerElement = document.querySelector('.js_tab_wrap');
+  const header = document.querySelector('.header');
+  function isInViewport(el, offset = 0) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= window.innerHeight - offset && rect.bottom >= offset;
+  }
+
+  function toggleNaviContainer() {
+    if (!triggerElement || !naviContainer) return;
+
+    const headerHeight = header ? header.offsetHeight : 0;
+
+    if (isInViewport(triggerElement, headerHeight)) {
+      naviContainer.classList.add('is-show');
+    } else {
+      naviContainer.classList.remove('is-show');
+    }
+  }
+
+  toggleNaviContainer();
+  window.addEventListener('scroll', toggleNaviContainer);
+  window.addEventListener('resize', toggleNaviContainer);
+});
+

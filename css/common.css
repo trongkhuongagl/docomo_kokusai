@@ -246,7 +246,10 @@ sub {
   background: #3C3C3C;
   color: #FFFFFF;
   text-align: center;
-  padding: min(5.9722222222vw, 86px) min(0.6944444444vw, 10px) min(9.7222222222vw, 140px);
+  padding: min(5.9722222222vw, 86px) min(0.6944444444vw, 10px) min(23.6111111111vw, 340px);
+}
+.footer.is-02, .footer.is-03 {
+  padding-bottom: min(18.0555555556vw, 260px);
 }
 
 .footer_nav {
@@ -1105,6 +1108,10 @@ sub {
   line-height: 1.1;
   letter-spacing: 0.1em;
 }
+.tab_content_02 .box_fee .ahamo_fee .content .note .txt {
+  display: flex;
+  gap: 1px;
+}
 .tab_content_02 .box_footer {
   padding: min(5.5555555556vw, 80px) min(15.9027777778vw, 229px);
 }
@@ -1139,14 +1146,14 @@ sub {
 .tab_content_03 .box_fee_wrap .icon_03 {
   width: min(12.7777777778vw, 184px);
   height: min(10.625vw, 153px);
-  top: min(15.4166666667vw, 222px);
+  top: min(15.7638888889vw, 227px);
   left: min(1.3194444444vw, 19px);
 }
 .tab_content_03 .box_fee_wrap .icon_04 {
   width: min(11.0416666667vw, 159px);
   height: min(10vw, 144px);
-  top: min(0.3472222222vw, 5px);
-  right: min(-0.6944444444vw, -10px);
+  top: min(15.2777777778vw, 220px);
+  right: min(2.0138888889vw, 29px);
 }
 .tab_content_03 .box_fee_wrap .icon_05 {
   width: min(17.1527777778vw, 247px);
@@ -1260,6 +1267,10 @@ sub {
   line-height: 1.8;
   text-align: left;
 }
+.tab_content_03 .box_fee .note .txt {
+  display: flex;
+  gap: 1px;
+}
 .tab_content_03 .box_fee .note a {
   text-decoration: underline;
 }
@@ -1299,6 +1310,15 @@ sub {
   justify-content: center;
   align-items: center;
   display: none;
+}
+.navi_under_container {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.navi_under_container.is-show {
+  opacity: 1;
+  visibility: visible;
 }
 .navi_under.active {
   display: flex;
@@ -1372,7 +1392,10 @@ sub {
   }
   .footer {
     text-align: left;
-    padding: 15.0127226463vw 16.0305343511vw 27.989821883vw 12.7226463104vw;
+    padding: 15.0127226463vw 16.0305343511vw 50.8905852417vw 12.7226463104vw;
+  }
+  .footer.is-02, .footer.is-03 {
+    padding-bottom: 38.1679389313vw;
   }
   .footer_nav {
     gap: 8.3969465649vw;
@@ -2033,8 +2056,11 @@ sub {
   .navi_under {
     padding: 5.0890585242vw;
   }
-  .navi_under_wrap {
-    padding: 0 2.5445292621vw;
+  .navi_under.is-01 {
+    padding: 5.0890585242vw 3.0534351145vw;
+  }
+  .navi_under.is-01 .button {
+    padding: 2.0356234097vw 4.0712468193vw;
   }
   .navi_under .button_wrap {
     gap: 2.5445292621vw;
@@ -2049,14 +2075,15 @@ sub {
   .navi_under .button .note {
     font-size: 2.5445292621vw;
     padding: 5px;
-    top: calc(-50% - 12px);
+    top: -8.1424936387vw;
   }
   .navi_under .button {
     width: auto;
     font-size: 3.0534351145vw;
-    padding: 2.0356234097vw 5.0890585242vw;
+    padding: 4.0712468193vw 4.834605598vw;
     text-align: center;
     border-radius: 10.1781170483vw;
+    gap: 1.7811704835vw;
   }
 }
 @media print, screen and (min-width: 768px) and (max-width: 1439px) {

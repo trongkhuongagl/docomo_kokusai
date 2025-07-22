@@ -7,6 +7,15 @@
 //
 .navi {
   &_under {
+    &_container {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      &.is-show {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
     position: fixed;
     bottom: 0;
     left: 0;
@@ -27,6 +36,11 @@
       padding: vw-s(20);
 
       &.is-01 {
+        padding: vw-s(20) vw-s(12);
+
+        .button {
+          padding: vw-s(8) vw-s(16);
+        }
       }
     }
   
@@ -36,10 +50,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-  
-      @include mq('small') {
-        padding: 0 vw-s(10);
-      }
     }
   
     .button {
@@ -80,16 +90,17 @@
         @include mq('small') {
           font-size: vw-s(10);
           padding: 5px;
-          top: calc(-50% - 12px);
+          top: vw-s(-32);
         }
       }
   
       @include mq('small') {
         width: auto;
         font-size: vw-s(12);
-        padding: vw-s(8) vw-s(20);
+        padding: vw-s(16) vw-s(19);
         text-align: center;
         border-radius: vw-s(40);
+        gap: vw-s(7);
       }
     }
   }
