@@ -570,6 +570,11 @@
               font-size: vw-min(10);
               line-height: 1;
               transform: translateY(vw-min(-7));
+
+              @include mq('small') {
+                font-size: vw-s(10);
+                transform: translateY(vw-s(-5));
+              }
             }
           }
           .price_list {
@@ -847,6 +852,7 @@
           &_01 {
             padding-top: vw-min(29);
             .image {
+              width: vw-min(36);
               margin-bottom: vw-min(28);
             }
             .txt-big {
@@ -857,6 +863,7 @@
           &_02 {
             padding-top: vw-min(31);
             .image {
+              width: vw-min(144);
               margin-bottom: vw-min(23);
             }
             .txt-big {
@@ -867,6 +874,7 @@
           &_03 {
             padding-top: vw-min(27);
             .image {
+              width: vw-min(50);
               margin-bottom: vw-min(14);
             }
           }
@@ -885,6 +893,7 @@
               min-height: vw-s(200);
               padding-top: vw-s(29);
               .image {
+                width: vw-s(36);
                 margin-bottom: vw-s(28);
               }
             }
@@ -892,6 +901,7 @@
               min-height: vw-s(234);
               padding-top: vw-s(31);
               .image {
+                width: vw-s(144);
                 margin-bottom: vw-s(23);
               }
             }
@@ -899,6 +909,7 @@
               min-height: vw-s(220);
               padding-top: vw-s(28);
               .image {
+                width: vw-s(50);
                 margin-bottom: vw-s(14);
               }
             }

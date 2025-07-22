@@ -233,13 +233,21 @@ sub {
   display: none;
 }
 .header {
-  padding: 26px 30px 25px;
+  padding: min(1.8055555556vw, 26px) min(2.0833333333vw, 30px) min(1.7361111111vw, 25px);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #fff;
   z-index: 20;
+}
+.header_logo {
+  width: 148px;
+}
+.header_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -291,7 +299,7 @@ sub {
 }
 
 .sec_mv {
-  padding-top: 103px;
+  padding-top: min(7.1527777778vw, 103px);
 }
 
 .sec_banner {
@@ -777,6 +785,7 @@ sub {
   padding-top: min(2.0138888889vw, 29px);
 }
 .tab_content_01 .box_logo .item_01 .image {
+  width: min(2.5vw, 36px);
   margin-bottom: min(1.9444444444vw, 28px);
 }
 .tab_content_01 .box_logo .item_01 .txt-big {
@@ -787,6 +796,7 @@ sub {
   padding-top: min(2.1527777778vw, 31px);
 }
 .tab_content_01 .box_logo .item_02 .image {
+  width: min(10vw, 144px);
   margin-bottom: min(1.5972222222vw, 23px);
 }
 .tab_content_01 .box_logo .item_02 .txt-big {
@@ -797,6 +807,7 @@ sub {
   padding-top: min(1.875vw, 27px);
 }
 .tab_content_01 .box_logo .item_03 .image {
+  width: min(3.4722222222vw, 50px);
   margin-bottom: min(0.9722222222vw, 14px);
 }
 .tab_content_01 .box_logo .image {
@@ -1375,6 +1386,7 @@ sub {
     font-size: 4.5801526718vw;
     padding: 7.6335877863vw 5.0890585242vw;
     gap: 2.5445292621vw;
+    border-radius: 10.1781170483vw;
   }
   .pc {
     display: none;
@@ -1389,6 +1401,12 @@ sub {
   }
   table.sp {
     display: table;
+  }
+  .header {
+    padding: 6.6157760814vw 7.6335877863vw 6.3613231552vw;
+  }
+  .header_logo {
+    width: 37.6590330789vw;
   }
   .footer {
     text-align: left;
@@ -1421,6 +1439,9 @@ sub {
   }
   .sec_content {
     padding-top: 15.5216284987vw;
+  }
+  .sec_mv {
+    padding-top: 26.2086513995vw;
   }
   .sec_banner {
     padding: 13.7404580153vw 5.0890585242vw;
@@ -1602,6 +1623,10 @@ sub {
   .tab_content_01 .box_fee_item .price_package .cost span {
     font-size: 11.7048346056vw;
   }
+  .tab_content_01 .box_fee_item .price_package .num {
+    font-size: 2.5445292621vw;
+    transform: translateY(-1.272264631vw);
+  }
   .tab_content_01 .box_fee_item .price_list .heading {
     font-size: 6.106870229vw;
     margin-bottom: 5.0890585242vw;
@@ -1704,6 +1729,7 @@ sub {
     padding-top: 7.3791348601vw;
   }
   .tab_content_01 .box_logo .item_01 .image {
+    width: 9.1603053435vw;
     margin-bottom: 7.1246819338vw;
   }
   .tab_content_01 .box_logo .item_02 {
@@ -1711,6 +1737,7 @@ sub {
     padding-top: 7.8880407125vw;
   }
   .tab_content_01 .box_logo .item_02 .image {
+    width: 36.641221374vw;
     margin-bottom: 5.8524173028vw;
   }
   .tab_content_01 .box_logo .item_03 {
@@ -1718,6 +1745,7 @@ sub {
     padding-top: 7.1246819338vw;
   }
   .tab_content_01 .box_logo .item_03 .image {
+    width: 12.7226463104vw;
     margin-bottom: 3.5623409669vw;
   }
   .tab_content_01 .box_logo .text {

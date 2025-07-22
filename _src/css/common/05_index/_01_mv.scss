@@ -6,5 +6,9 @@
 // MV
 //
 .sec_mv {
-  padding-top: 103px;
+  padding-top: vw-min(103);
+
+  @include mq('small') {
+    padding-top: vw-s(103);
+  }
 }

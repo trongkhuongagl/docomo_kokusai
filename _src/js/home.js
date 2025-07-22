@@ -65,18 +65,21 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', () => {
   const naviContainer = document.querySelector('.navi_under_container');
   const triggerElement = document.querySelector('.js_tab_wrap');
-  const header = document.querySelector('.header');
-  function isInViewport(el, offset = 0) {
-    const rect = el.getBoundingClientRect();
-    return rect.top <= window.innerHeight - offset && rect.bottom >= offset;
+  if (!naviContainer || !triggerElement) return;
+
+  function getExtraOffset() {
+    return window.innerWidth <= 768 ? 550 : 350;
   }
 
   function toggleNaviContainer() {
-    if (!triggerElement || !naviContainer) return;
+    const extraOffset = getExtraOffset();
+    const triggerTop = triggerElement.offsetTop;
+    const scrollY = window.scrollY;
 
-    const headerHeight = header ? header.offsetHeight : 0;
+    console.log('scrollY:', scrollY);
+    console.log('triggerTop + extraOffset:', triggerTop + extraOffset);
 
-    if (isInViewport(triggerElement, headerHeight)) {
+    if (scrollY >= (triggerTop - extraOffset)) {
       naviContainer.classList.add('is-show');
     } else {
       naviContainer.classList.remove('is-show');
