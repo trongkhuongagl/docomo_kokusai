@@ -12,7 +12,7 @@
   z-index: 1000;
   background-color: rgba(0, 0, 0, .5);
   width: 100%;
-  height: 100px;
+  height: vw-min(100);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
     height: vw-s(60);
   }
   &_wrap {
-    max-width: 1000px;
+    max-width: vw-min(1000);
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -41,7 +41,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: vw-min(20);
 
         @include mq('small') {
           gap: vw-s(10);
@@ -51,8 +51,8 @@
         background-color: #2A238F;
         .link {
           &::after {
-            width: 12px;
-            height: 20px;
+            width: vw-min(12);
+            height: vw-min(20);
             background-image: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.98438 2.4751L9.01562 10.4751L1.98438 18.4751' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
   
             @include mq('small') {
@@ -69,8 +69,8 @@
         background-color: #CC0033;
         .link {
           &::after {
-            width: 21px;
-            height: 15px;
+            width: vw-min(21);
+            height: vw-min(15);
             background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.67139' y='0.75' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M0.857117 4.49268V13.7498H17.0571' stroke='white'/%3E%3C/svg%3E%0A");
   
             @include mq('small') {
@@ -83,7 +83,7 @@
           background-color: #EA6486;
         }
       }
-      width: 371px;
+      width: vw-min(371);
       border-radius: 40px;
       color: #fff;
       transition: all 0.3s;
@@ -95,13 +95,13 @@
     .link {
       width: 100%;
       height: 100%;
-      padding: 23px;
+      padding: vw-min(23);
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
+      font-size: vw-min(24);
       font-weight: 700;
-      gap: 10px;
+      gap: vw-min(10);
       &::after {
         display: inline-block;
         content: '';

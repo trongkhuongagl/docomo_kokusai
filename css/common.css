@@ -138,13 +138,13 @@ sub {
 }
 
 .l_container {
-  max-width: 1440px;
+  max-width: min(100vw, 1440px);
   width: 100%;
   margin: 0 auto;
 }
 
 .c_inner {
-  max-width: 1240px;
+  max-width: min(86.1111111111vw, 1240px);
   width: 100%;
   margin: 0 auto;
 }
@@ -175,7 +175,7 @@ sub {
   display: none;
 }
 .header {
-  padding: 26px 30px 25px;
+  padding: min(1.8055555556vw, 26px) min(2.0833333333vw, 30px) min(1.7361111111vw, 25px);
   position: fixed;
   top: 0;
   left: 0;
@@ -188,53 +188,53 @@ sub {
   background: #3C3C3C;
   color: #FFFFFF;
   text-align: center;
-  padding: 86px 10px 140px;
+  padding: min(5.9722222222vw, 86px) min(0.6944444444vw, 10px) min(9.7222222222vw, 140px);
 }
 
 .footer_nav {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: min(2.7777777778vw, 40px);
 }
 
 .footer_nav_a {
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   line-height: 1.1;
   text-decoration: underline;
 }
 .footer_nav_a .e-ico {
   display: inline-block;
-  width: 21px;
-  height: 15px;
+  width: min(1.4583333333vw, 21px);
+  height: min(1.0416666667vw, 15px);
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.8143' y='1' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M1 4.74268V13.9998H17.2' stroke='white'/%3E%3C/svg%3E%0A");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 10px;
+  margin-left: min(0.6944444444vw, 10px);
   position: relative;
-  top: 5px;
+  top: min(0.3472222222vw, 5px);
 }
 .footer_nav_a:hover {
   text-decoration: none;
 }
 
 .footer_coryright {
-  font-size: 14px;
+  font-size: min(0.9722222222vw, 14px);
   line-height: 1.1;
-  margin: 60px 0 0;
+  margin: min(4.1666666667vw, 60px) 0 0;
 }
 
 .sec_content {
   background: url(/special_contents/kokusai/docomo_kokusai/images/bg.png) repeat;
-  padding-top: 96px;
+  padding-top: min(6.6666666667vw, 96px);
 }
 
 .sec_mv {
-  padding-top: 103px;
+  padding-top: min(7.1527777778vw, 103px);
 }
 
 .sec_banner {
-  max-width: 600px;
+  max-width: min(41.6666666667vw, 600px);
   width: 100%;
   margin: 0 auto;
   padding: 51px 0;
@@ -243,42 +243,42 @@ sub {
 .tab_heading {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 19px;
+  margin-bottom: min(1.3194444444vw, 19px);
 }
 .tab_heading .item {
-  width: 226px;
+  width: min(15.6944444444vw, 226px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: min(0.6944444444vw, 10px);
 }
 .tab_heading .item.is-blue {
   border-bottom: 1px solid #2A238F;
-  margin-left: 285px;
+  margin-left: min(19.7916666667vw, 285px);
 }
 .tab_heading .item.is-blue .text {
   color: #2A238F;
 }
 .tab_heading .item.is-red {
   border-bottom: 1px solid #E70626;
-  margin-right: 99px;
+  margin-right: min(6.875vw, 99px);
 }
 .tab_heading .item.is-red .text {
   color: #E70626;
 }
 .tab_heading .text {
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 700;
   line-height: 1.1;
   text-align: center;
 }
 .tab_heading .text.is-small {
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
 }
 .tab_button {
-  width: 403px;
-  height: 130px;
+  width: min(27.9861111111vw, 403px);
+  height: min(9.0277777778vw, 130px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,7 +290,6 @@ sub {
   border-width: 1px 1px 0 1px;
   border-color: #000;
   border-radius: 10px 10px 0 0;
-  margin-left: -1px;
   transition: all 0.3s;
 }
 .tab_button_wrap {
@@ -301,26 +300,26 @@ sub {
   border-color: transparent;
 }
 .tab_button.is-01 img {
-  width: 228px;
+  width: min(15.8333333333vw, 228px);
 }
 .tab_button.is-01:hover, .tab_button.is-01.active {
   background-color: #CFEAFF;
 }
 .tab_button.is-02 img {
-  width: 212px;
+  width: min(14.7222222222vw, 212px);
   position: relative;
-  top: 5px;
+  top: min(0.3472222222vw, 5px);
 }
 .tab_button.is-02:hover, .tab_button.is-02.active {
   background-color: #CFEAFF;
 }
 .tab_button.is-03 {
-  width: 413px;
+  width: min(28.6805555556vw, 413px);
   margin-left: auto;
   margin-right: 1px;
 }
 .tab_button.is-03 img {
-  width: 236px;
+  width: min(16.3888888889vw, 236px);
 }
 .tab_button.is-03:hover, .tab_button.is-03.active {
   background-color: #FFDADA;
@@ -340,18 +339,24 @@ sub {
   position: relative;
 }
 .tab_content .main_image_desc {
-  padding: 30px 50px;
+  padding: min(2.0833333333vw, 30px) min(3.4722222222vw, 50px);
   background-color: #E2E2E2;
 }
 .tab_content .main_image_desc .txt {
   display: flex;
-  gap: 12px;
-  font-size: 12px;
+  gap: min(0.8333333333vw, 12px);
+  font-size: min(0.8333333333vw, 12px);
   line-height: 1.82;
   color: #000000;
 }
+.tab_content .main_image_desc .txt_sub {
+  display: flex;
+}
 .tab_content .main_image_desc .txt_02 {
-  padding-left: 38px;
+  padding-left: min(2.8472222222vw, 41px);
+}
+.tab_content .main_image_desc .txt_03, .tab_content .main_image_desc .txt_04, .tab_content .main_image_desc .txt_05 {
+  gap: min(1.5277777778vw, 22px);
 }
 .tab_content .img_line {
   display: flex;
@@ -365,7 +370,7 @@ sub {
 }
 .tab_content .box_footer {
   background-color: #CFEAFF;
-  padding: 60px 229px;
+  padding: min(4.1666666667vw, 60px) min(15.9027777778vw, 229px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -376,30 +381,30 @@ sub {
   background-color: #FFDADA;
 }
 .tab_content .box_footer .button {
-  width: 371px;
+  width: min(25.7638888889vw, 371px);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  font-size: 24px;
+  gap: min(1.3888888889vw, 20px);
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 700;
   line-height: 1.1;
   color: #fff;
   border-radius: 40px;
-  padding: 27px;
+  padding: min(1.875vw, 27px);
   transition: all 0.3s;
   position: relative;
 }
 .tab_content .box_footer .button_wrap {
   display: flex;
-  gap: 40px;
+  gap: min(2.7777777778vw, 40px);
 }
 .tab_content .box_footer .button_title {
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
-  margin-bottom: 47px;
+  margin-bottom: min(3.2638888889vw, 47px);
 }
 .tab_content .box_footer .button_title.is-blue {
   color: #2A238F;
@@ -409,19 +414,19 @@ sub {
 }
 .tab_content .box_footer .button_note {
   width: 100%;
-  margin-top: 40px;
+  margin-top: min(2.7777777778vw, 40px);
 }
 .tab_content .box_footer .button_note .txt {
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   line-height: 1.85;
   color: #000;
   display: flex;
   gap: 1px;
   text-align: left;
-  margin-left: 4px;
+  margin-left: min(0.2777777778vw, 4px);
 }
 .tab_content .box_footer .button:not(:first-of-type) {
-  margin-top: 20px;
+  margin-top: min(1.3888888889vw, 20px);
 }
 .tab_content .box_footer .button::after {
   display: inline-block;
@@ -434,8 +439,8 @@ sub {
   background-color: #2A238F;
 }
 .tab_content .box_footer .button.is-blue::after {
-  width: 12px;
-  height: 20px;
+  width: min(0.8333333333vw, 12px);
+  height: min(1.3888888889vw, 20px);
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.98438 2.4751L9.01562 10.4751L1.98438 18.4751' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
 }
 .tab_content .box_footer .button.is-blue:hover {
@@ -445,8 +450,8 @@ sub {
   background-color: #CC0033;
 }
 .tab_content .box_footer .button.is-red::after {
-  width: 21px;
-  height: 15px;
+  width: min(1.4583333333vw, 21px);
+  height: min(1.0416666667vw, 15px);
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.67139' y='0.75' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M0.857117 4.49268V13.7498H17.0571' stroke='white'/%3E%3C/svg%3E%0A");
 }
 .tab_content .box_footer .button.is-red:hover {
@@ -455,83 +460,83 @@ sub {
 .tab_content .box_footer .button .note {
   position: absolute;
   left: 50%;
-  top: calc(-50% + 12px);
+  top: calc(-50% + min(0.8333333333vw, 12px));
   transform: translateX(-50%);
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   font-weight: 700;
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
-  padding: 11px 9px;
+  padding: min(0.7638888889vw, 11px) min(0.625vw, 9px);
   white-space: nowrap;
 }
 .tab_content_01 {
-  padding-bottom: 107px;
+  padding-bottom: min(7.4305555556vw, 107px);
 }
 .tab_content_01 .main_image .icon_01 {
-  width: 217px;
-  top: 87px;
-  left: 31px;
+  width: min(15.0694444444vw, 217px);
+  top: min(6.0416666667vw, 87px);
+  left: min(2.1527777778vw, 31px);
 }
 .tab_content_01 .main_image .icon_02 {
-  width: 196px;
-  top: 131px;
-  right: 17px;
+  width: min(13.6111111111vw, 196px);
+  top: min(9.0972222222vw, 131px);
+  right: min(1.1805555556vw, 17px);
 }
 .tab_content_01 .box_fee {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: min(3.3333333333vw, 48px);
 }
 .tab_content_01 .box_fee::before {
   content: "";
   width: 1px;
-  height: calc(100% - 20px);
+  height: calc(100% - min(1.3888888889vw, 20px));
   background-color: #ccc;
   position: absolute;
-  left: calc(50% + 40px);
+  left: calc(50% + min(2.7777777778vw, 40px));
   top: 0;
   transform: translateX(-50%);
 }
 .tab_content_01 .box_fee_wrap {
-  padding: 82px 40px 60px;
+  padding: min(5.6944444444vw, 82px) min(2.7777777778vw, 40px) min(4.1666666667vw, 60px);
 }
 .tab_content_01 .box_fee_wrap .icon_03 {
-  width: 202px;
-  top: 1140px;
-  left: -51px;
+  width: min(14.0277777778vw, 202px);
+  top: min(79.1666666667vw, 1140px);
+  left: min(-3.5416666667vw, -51px);
 }
 .tab_content_01 .box_fee_item.is-red {
-  width: 580px;
+  width: min(40.2777777778vw, 580px);
 }
 .tab_content_01 .box_fee_item.is-red .logo {
-  width: 304px;
-  margin-bottom: 49px;
+  width: min(21.1111111111vw, 304px);
+  margin-bottom: min(3.4027777778vw, 49px);
 }
 .tab_content_01 .box_fee_item.is-red .price_list {
-  margin-bottom: 49px;
+  margin-bottom: min(3.4027777778vw, 49px);
 }
 .tab_content_01 .box_fee_item.is-gold {
-  width: 500px;
+  width: min(34.7222222222vw, 500px);
 }
 .tab_content_01 .box_fee_item.is-gold .logo {
-  width: 450px;
-  margin-bottom: 47px;
+  width: min(31.25vw, 450px);
+  margin-bottom: min(3.2638888889vw, 47px);
 }
 .tab_content_01 .box_fee_item.is-gold .price_package.is-one-col.is-gold {
   margin-bottom: 0;
-  margin-top: 42px;
+  margin-top: min(2.9166666667vw, 42px);
 }
 .tab_content_01 .box_fee_item .logo {
   margin: 0 auto;
 }
 .tab_content_01 .box_fee_item .price_package {
-  margin-bottom: 44px;
+  margin-bottom: min(3.0555555556vw, 44px);
 }
 .tab_content_01 .box_fee_item .price_package.is-red .title {
   background-color: #D00F31;
-  padding: 15px;
+  padding: min(1.0416666667vw, 15px);
 }
 .tab_content_01 .box_fee_item .price_package.is-red .item {
   border-color: #D00F31;
@@ -547,25 +552,25 @@ sub {
 }
 .tab_content_01 .box_fee_item .price_package.is-gold .item {
   border-color: #806500;
-  min-height: 104px;
+  min-height: min(7.2222222222vw, 104px);
 }
 .tab_content_01 .box_fee_item .price_package.is-gold .cost {
   color: #806500;
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: min(1.9444444444vw, 28px);
+  margin-bottom: min(1.3888888889vw, 20px);
 }
 .tab_content_01 .box_fee_item .price_package .title {
   background-color: #707070;
   color: #fff;
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 900;
-  padding: 11px;
+  padding: min(0.7638888889vw, 11px);
   text-align: center;
 }
 .tab_content_01 .box_fee_item .price_package .desc {
   display: block;
-  font-size: 12px;
-  margin-top: 4px;
+  font-size: min(0.8333333333vw, 12px);
+  margin-top: min(0.2777777778vw, 4px);
 }
 .tab_content_01 .box_fee_item .price_package .content {
   background-color: #fff;
@@ -574,7 +579,7 @@ sub {
   align-items: center;
 }
 .tab_content_01 .box_fee_item .price_package .item {
-  min-height: 120px;
+  min-height: min(8.3333333333vw, 120px);
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -589,24 +594,24 @@ sub {
   background-color: #CECECE;
   text-align: center;
   font-weight: 900;
-  font-size: 18px;
-  padding: 4px;
+  font-size: min(1.25vw, 18px);
+  padding: min(0.2777777778vw, 4px);
 }
 .tab_content_01 .box_fee_item .price_package .cost {
-  font-size: 22px;
+  font-size: min(1.5277777778vw, 22px);
   font-weight: 900;
   text-align: center;
   margin-top: auto;
-  margin-bottom: 12px;
+  margin-bottom: min(0.8333333333vw, 12px);
 }
 .tab_content_01 .box_fee_item .price_package .cost span {
-  font-size: 46px;
+  font-size: min(3.1944444444vw, 46px);
 }
 .tab_content_01 .box_fee_item .price_package .num {
   display: inline-block;
-  font-size: 10px;
+  font-size: min(0.6944444444vw, 10px);
   line-height: 1;
-  transform: translateY(-7px);
+  transform: translateY(min(-0.4861111111vw, -7px));
 }
 .tab_content_01 .box_fee_item .price_list.is-red .heading {
   color: #D00F31;
@@ -628,163 +633,167 @@ sub {
 }
 .tab_content_01 .box_fee_item .price_list .heading {
   width: fit-content;
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 900;
   text-align: center;
-  margin: 0 auto 20px;
+  margin: 0 auto min(1.3888888889vw, 20px);
   border-bottom: 1px solid currentColor;
-  padding-bottom: 5px;
+  padding-bottom: min(0.3472222222vw, 5px);
 }
 .tab_content_01 .box_fee_item .price_list .item {
   display: flex;
   align-items: center;
-  padding: 16px 20px;
+  padding: min(1.1111111111vw, 16px) min(1.3888888889vw, 20px);
   position: relative;
 }
 .tab_content_01 .box_fee_item .price_list .item:not(:first-of-type) {
-  margin-top: 2px;
+  margin-top: min(0.1388888889vw, 2px);
 }
 .tab_content_01 .box_fee_item .price_list .item:last-of-type {
-  padding-top: 20px;
+  padding-top: min(1.3888888889vw, 20px);
 }
 .tab_content_01 .box_fee_item .price_list .title {
   display: inline-block;
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: min(0.2777777778vw, 4px);
   position: relative;
 }
 .tab_content_01 .box_fee_item .price_list .num {
   display: inline-block;
-  font-size: 10px;
+  font-size: min(0.6944444444vw, 10px);
   position: absolute;
-  top: 3px;
-  right: -16px;
+  top: min(0.2083333333vw, 3px);
+  right: min(-1.1111111111vw, -16px);
 }
 .tab_content_01 .box_fee_item .price_list .desc {
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   white-space: nowrap;
 }
 .tab_content_01 .box_fee_item .price_list .cost {
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
   font-weight: 900;
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: min(1.3888888889vw, 20px);
   transform: translateY(-50%);
 }
 .tab_content_01 .box_fee_item .price_list .cost span {
-  font-size: 30px;
+  font-size: min(2.0833333333vw, 30px);
 }
 .tab_content_01 .box_fee_item .discount {
   background-color: #F3F3F3;
-  margin-top: 3px;
-  padding: 26px 100px 20px;
+  margin-top: min(0.2083333333vw, 3px);
+  padding: min(1.8055555556vw, 26px) min(6.9444444444vw, 100px) min(1.3888888889vw, 20px);
   text-align: center;
 }
 .tab_content_01 .box_fee_item .discount .title {
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   font-weight: 900;
-  margin-bottom: 4px;
+  margin-bottom: min(0.2777777778vw, 4px);
 }
 .tab_content_01 .box_fee_item .discount .desc {
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: min(0.8333333333vw, 12px);
+  margin-bottom: min(0.6944444444vw, 10px);
+  text-align: left;
+  display: flex;
+  gap: 1px;
+  margin-left: min(0.6944444444vw, 10px);
   white-space: nowrap;
 }
 .tab_content_01 .box_fee_item .discount .cost {
-  font-size: 22px;
+  font-size: min(1.5277777778vw, 22px);
   font-weight: 900;
   color: #806500;
 }
 .tab_content_01 .box_fee_item .discount .cost span {
-  font-size: 46px;
+  font-size: min(3.1944444444vw, 46px);
 }
 .tab_content_01 .box_fee_item .points {
-  margin-top: 42px;
+  margin-top: min(2.9166666667vw, 42px);
   text-align: center;
 }
 .tab_content_01 .box_fee_item .points .title {
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: min(0.6944444444vw, 10px);
 }
 .tab_content_01 .box_fee_item .points .title .num {
   display: inline-block;
-  font-size: 10px;
-  transform: translateY(-6px);
+  font-size: min(0.6944444444vw, 10px);
+  transform: translateY(min(-0.4166666667vw, -6px));
 }
 .tab_content_01 .box_fee_item .points .note {
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   display: block;
   color: #333333;
 }
 .tab_content_01 .box_fee_item .points .note span {
   position: relative;
-  font-size: 8px;
-  top: -4px;
+  font-size: min(0.5555555556vw, 8px);
+  top: min(-0.2777777778vw, -4px);
 }
 .tab_content_01 .box_fee_item .point .txt1 {
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   font-weight: 900;
   line-height: 1.1;
   color: #806500;
-  margin-bottom: 5px;
+  margin-bottom: min(0.3472222222vw, 5px);
 }
 .tab_content_01 .box_fee_item .point .number {
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
   font-weight: 900;
   line-height: 1.1;
   color: #806500;
-  margin-bottom: 5px;
+  margin-bottom: min(0.3472222222vw, 5px);
 }
 .tab_content_01 .box_fee_item .point .number span {
-  font-size: 46px;
+  font-size: min(3.1944444444vw, 46px);
 }
 .tab_content_01 .box_fee_item .point .number .pt {
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
 }
 .tab_content_01 .box_logo {
-  padding: 0 10px;
-  margin-bottom: 20px;
+  padding: 0 min(0.6944444444vw, 10px);
+  margin-bottom: min(1.3888888889vw, 20px);
 }
 .tab_content_01 .box_logo .list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: min(1.0416666667vw, 15px);
 }
 .tab_content_01 .box_logo .item {
   background-color: #F2F2F2;
-  min-height: 200px;
+  min-height: min(13.8888888889vw, 200px);
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: min(1.3888888889vw, 20px);
 }
 .tab_content_01 .box_logo .item_01 {
-  padding-top: 29px;
+  padding-top: min(2.0138888889vw, 29px);
 }
 .tab_content_01 .box_logo .item_01 .image {
-  margin-bottom: 28px;
+  margin-bottom: min(1.9444444444vw, 28px);
 }
 .tab_content_01 .box_logo .item_01 .txt-big {
   position: relative;
   left: 3px;
 }
 .tab_content_01 .box_logo .item_02 {
-  padding-top: 31px;
+  padding-top: min(2.1527777778vw, 31px);
 }
 .tab_content_01 .box_logo .item_02 .image {
-  margin-bottom: 23px;
+  margin-bottom: min(1.5972222222vw, 23px);
 }
 .tab_content_01 .box_logo .item_02 .txt-big {
   position: relative;
-  left: 1px;
+  left: min(0.0694444444vw, 1px);
 }
 .tab_content_01 .box_logo .item_03 {
-  padding-top: 27px;
+  padding-top: min(1.875vw, 27px);
 }
 .tab_content_01 .box_logo .item_03 .image {
-  margin-bottom: 14px;
+  margin-bottom: min(0.9722222222vw, 14px);
 }
 .tab_content_01 .box_logo .image {
   width: fit-content;
@@ -796,62 +805,62 @@ sub {
   text-align: center;
 }
 .tab_content_01 .box_logo .txt-small {
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   white-space: nowrap;
 }
 .tab_content_01 .box_logo .txt-small .txt1,
 .tab_content_01 .box_logo .txt-small .txt2 {
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
   position: relative;
 }
 .tab_content_01 .box_logo .txt-small .txt1 {
-  right: -5px;
+  right: min(-0.3472222222vw, -5px);
 }
 .tab_content_01 .box_logo .txt-small .txt2 {
-  right: 5px;
+  right: min(0.3472222222vw, 5px);
 }
 .tab_content_01 .box_logo .txt-xsmall {
-  font-size: 10px;
-  margin-top: 3px;
+  font-size: min(0.6944444444vw, 10px);
+  margin-top: min(0.2083333333vw, 3px);
 }
 .tab_content_01 .box_logo .txt-big {
-  font-size: 24px;
-  margin-top: 2px;
+  font-size: min(1.6666666667vw, 24px);
+  margin-top: min(0.1388888889vw, 2px);
 }
 .tab_content_01 .box_logo .txt-big .num {
-  font-size: 15px;
+  font-size: min(1.0416666667vw, 15px);
   display: inline-block;
-  transform: translateY(-9px);
+  transform: translateY(min(-0.625vw, -9px));
 }
 .tab_content_01 .box_logo .txt-big .chr {
   display: inline-block;
-  margin-right: -5px;
+  margin-right: min(-0.3472222222vw, -5px);
 }
 .tab_content_01 .box_logo .txt-note {
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   font-weight: 400;
   letter-spacing: -0.07em;
   text-align: left;
-  margin-top: 5px;
+  margin-top: min(0.3472222222vw, 5px);
 }
 .tab_content_01 .description {
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   font-weight: 300;
-  padding: 0 11px;
+  padding: 0 min(0.7638888889vw, 11px);
   letter-spacing: 0.003em;
 }
 .tab_content_01 .box_footer .icon_04 {
-  width: 218px;
-  top: 276px;
-  left: -47px;
+  width: min(15.1388888889vw, 218px);
+  top: min(19.1666666667vw, 276px);
+  left: min(-3.2638888889vw, -47px);
 }
 .tab_content_01 .box_footer .icon_05 {
-  width: 279px;
-  top: 240px;
-  right: -64px;
+  width: min(19.375vw, 279px);
+  top: min(16.6666666667vw, 240px);
+  right: min(-4.4444444444vw, -64px);
 }
 .tab_content_02 {
-  padding-bottom: 100px;
+  padding-bottom: min(6.9444444444vw, 100px);
 }
 .tab_content_02 .main_image {
   position: relative;
@@ -860,193 +869,193 @@ sub {
   position: absolute;
 }
 .tab_content_02 .main_image .icon_01 {
-  width: 319px;
-  height: 181px;
-  top: 43px;
-  left: -48px;
+  width: min(22.1527777778vw, 319px);
+  height: min(12.5694444444vw, 181px);
+  top: min(2.9861111111vw, 43px);
+  left: min(-3.3333333333vw, -48px);
 }
 .tab_content_02 .main_image .icon_02 {
-  width: 178px;
-  height: 247px;
-  top: 145px;
-  right: -30px;
+  width: min(12.3611111111vw, 178px);
+  height: min(17.1527777778vw, 247px);
+  top: min(10.0694444444vw, 145px);
+  right: min(-2.0833333333vw, -30px);
 }
 .tab_content_02 .box_fee_wrap {
-  padding: 80px 120px;
+  padding: min(5.5555555556vw, 80px) min(8.3333333333vw, 120px);
 }
 .tab_content_02 .box_fee .basic_fee {
   position: relative;
-  margin-bottom: 41px;
+  margin-bottom: min(2.8472222222vw, 41px);
 }
 .tab_content_02 .box_fee .basic_fee .img_admin_fee {
-  width: 182px;
-  height: 190px;
+  width: min(12.6388888889vw, 182px);
+  height: min(13.1944444444vw, 190px);
   position: absolute;
-  top: -23px;
-  right: -74px;
+  top: min(-1.5972222222vw, -23px);
+  right: min(-5.1388888889vw, -74px);
 }
 .tab_content_02 .box_fee .basic_fee .title {
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 900;
   background-color: #2A238F;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: min(0.6944444444vw, 10px);
 }
 .tab_content_02 .box_fee .basic_fee .content {
   background-color: #fff;
   border: 1px solid #2A238F;
-  padding: 36px 219px 26px 219px;
+  padding: min(2.5vw, 36px) min(15.2083333333vw, 219px) min(1.8055555556vw, 26px) min(15.2083333333vw, 219px);
 }
 .tab_content_02 .box_fee .basic_fee .capacity {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: min(2.7777777778vw, 40px);
   white-space: nowrap;
-  margin-bottom: 17px;
+  margin-bottom: min(1.1805555556vw, 17px);
 }
 .tab_content_02 .box_fee .basic_fee .number {
-  font-size: 38px;
+  font-size: min(2.6388888889vw, 38px);
   font-weight: 900;
   color: #2A238F;
   background-color: rgba(42, 35, 143, 0.15);
-  padding: 18px 31px;
+  padding: min(1.25vw, 18px) min(2.1527777778vw, 31px);
 }
 .tab_content_02 .box_fee .basic_fee .cost {
-  font-size: 32px;
+  font-size: min(2.2222222222vw, 32px);
   font-weight: 900;
   color: #2A238F;
   line-height: 1;
 }
 .tab_content_02 .box_fee .basic_fee .cost span {
-  font-size: 110px;
+  font-size: min(7.6388888889vw, 110px);
 }
 .tab_content_02 .box_fee .basic_fee .note {
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   font-weight: 500;
   color: #000;
   text-align: center;
 }
 .tab_content_02 .box_fee .ahamo_fee .heading {
   text-align: center;
-  margin-bottom: 66px;
+  margin-bottom: min(4.5833333333vw, 66px);
 }
 .tab_content_02 .box_fee .ahamo_fee .heading .head {
-  font-size: 42px;
+  font-size: min(2.9166666667vw, 42px);
   font-weight: 900;
 }
 .tab_content_02 .box_fee .ahamo_fee .heading .txt_blue {
-  font-size: 52px;
+  font-size: min(3.6111111111vw, 52px);
   color: #2A238F;
 }
 .tab_content_02 .box_fee .ahamo_fee .heading .dot {
   display: inline-block;
-  font-size: 32px;
-  transform: translateY(-23px);
+  font-size: min(2.2222222222vw, 32px);
+  transform: translateY(min(-1.5972222222vw, -23px));
 }
 .tab_content_02 .box_fee .ahamo_fee .heading .note {
-  font-size: 16px;
+  font-size: min(1.1111111111vw, 16px);
   font-weight: 500;
   color: #000000;
   line-height: 1.1;
   letter-spacing: 0.1em;
   text-align: center;
-  margin-top: 3px;
+  margin-top: min(0.2083333333vw, 3px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content {
   background-color: #E8F5FF;
-  padding: 21px 170px 60px 170px;
+  padding: min(1.4583333333vw, 21px) min(11.8055555556vw, 170px) min(4.1666666667vw, 60px) min(11.8055555556vw, 170px);
   position: relative;
 }
 .tab_content_02 .box_fee .ahamo_fee .content .icon {
   position: absolute;
 }
 .tab_content_02 .box_fee .ahamo_fee .content .icon_03 {
-  width: 322px;
-  height: 214px;
-  top: -99px;
-  left: -161px;
+  width: min(22.3611111111vw, 322px);
+  height: min(14.8611111111vw, 214px);
+  top: min(-6.875vw, -99px);
+  left: min(-11.1805555556vw, -161px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .icon_04 {
-  width: 234px;
-  height: 198px;
-  top: -44px;
-  right: -59px;
+  width: min(16.25vw, 234px);
+  height: min(13.75vw, 198px);
+  top: min(-3.0555555556vw, -44px);
+  right: min(-4.0972222222vw, -59px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .icon_05 {
-  width: 260px;
-  height: 235px;
-  bottom: -54px;
-  left: -96px;
+  width: min(18.0555555556vw, 260px);
+  height: min(16.3194444444vw, 235px);
+  bottom: min(-3.75vw, -54px);
+  left: min(-6.6666666667vw, -96px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .icon_06 {
-  width: 300px;
-  height: 233px;
-  bottom: -25px;
-  right: -151px;
+  width: min(20.8333333333vw, 300px);
+  height: min(16.1805555556vw, 233px);
+  bottom: min(-1.7361111111vw, -25px);
+  right: min(-10.4861111111vw, -151px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .title {
-  width: 472px;
-  margin: 0 auto 10px;
+  width: min(32.7777777778vw, 472px);
+  margin: 0 auto min(0.6944444444vw, 10px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .capacity {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: min(2.0833333333vw, 30px);
   white-space: nowrap;
-  margin-left: 14px;
-  margin-bottom: 39px;
+  margin-left: min(0.9722222222vw, 14px);
+  margin-bottom: min(2.7083333333vw, 39px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .number {
-  font-size: 38px;
+  font-size: min(2.6388888889vw, 38px);
   font-weight: 900;
   color: #fff;
   background-color: #0D78C9;
-  padding: 17px 20px;
+  padding: min(1.1805555556vw, 17px) min(1.3888888889vw, 20px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .cost {
-  font-size: 42px;
+  font-size: min(2.9166666667vw, 42px);
   font-weight: 900;
   color: #0D78C9;
   line-height: 1;
 }
 .tab_content_02 .box_fee .ahamo_fee .content .cost span {
-  font-size: 110px;
+  font-size: min(7.6388888889vw, 110px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content span.tax {
-  font-size: 20px;
+  font-size: min(1.3888888889vw, 20px);
   font-weight: 400;
   color: #333333;
   position: relative;
-  left: -10px;
+  left: min(-0.6944444444vw, -10px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .detail_fee {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 19px;
+  gap: min(1.3888888889vw, 20px);
+  margin-bottom: min(1.3194444444vw, 19px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .item {
-  width: 291px;
+  width: min(20.2083333333vw, 291px);
   background-color: #fff;
   border: 1px solid #707070;
-  padding: 10px;
+  padding: min(0.6944444444vw, 10px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .item_01 .logo {
-  margin-bottom: 10px;
+  margin-bottom: min(0.6944444444vw, 10px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .item_02 {
-  width: 271px;
+  width: min(18.8194444444vw, 271px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .item_02 .logo {
-  margin-bottom: 20px;
+  margin-bottom: min(1.3888888889vw, 20px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .plus {
-  width: 25px;
-  height: 25px;
+  width: min(1.7361111111vw, 25px);
+  height: min(1.7361111111vw, 25px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .plus svg {
   width: 100%;
@@ -1062,43 +1071,43 @@ sub {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: min(0.6944444444vw, 10px);
   white-space: nowrap;
-  margin-left: 7px;
+  margin-left: min(0.4861111111vw, 7px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .num {
-  font-size: 23px;
+  font-size: min(1.5972222222vw, 23px);
   color: #707070;
   font-weight: 800;
   background-color: rgba(112, 112, 112, 0.15);
-  padding: 9px 10px;
+  padding: min(0.625vw, 9px) min(0.6944444444vw, 10px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .cos {
-  font-size: 22px;
+  font-size: min(1.5277777778vw, 22px);
   color: #707070;
   font-weight: 900;
 }
 .tab_content_02 .box_fee .ahamo_fee .content .cos span {
-  font-size: 42px;
+  font-size: min(2.9166666667vw, 42px);
 }
 .tab_content_02 .box_fee .ahamo_fee .content .cos span.dot {
   display: inline-block;
-  font-size: 15px;
-  transform: translateY(-7px);
+  font-size: min(1.0416666667vw, 15px);
+  transform: translateY(min(-0.4861111111vw, -7px));
 }
 .tab_content_02 .box_fee .ahamo_fee .content .note {
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   color: #000000;
   font-weight: 500;
-  margin-left: 15px;
+  margin-left: min(1.0416666667vw, 15px);
   line-height: 1.1;
   letter-spacing: 0.1em;
 }
 .tab_content_02 .box_footer {
-  padding: 80px 229px;
+  padding: min(5.5555555556vw, 80px) min(15.9027777778vw, 229px);
 }
 .tab_content_03 {
-  padding-bottom: 89px;
+  padding-bottom: min(6.1805555556vw, 89px);
 }
 .tab_content_03 .main_image {
   position: relative;
@@ -1107,87 +1116,97 @@ sub {
   position: absolute;
 }
 .tab_content_03 .main_image .icon_01 {
-  width: 295px;
-  height: 288px;
-  top: 100px;
-  left: -83px;
+  width: min(20.4861111111vw, 295px);
+  height: min(20vw, 288px);
+  top: min(6.9444444444vw, 100px);
+  left: min(-5.7638888889vw, -83px);
 }
 .tab_content_03 .main_image .icon_02 {
-  width: 185px;
-  height: 276px;
-  top: 20px;
-  right: -23px;
+  width: min(12.8472222222vw, 185px);
+  height: min(19.1666666667vw, 276px);
+  top: min(1.3888888889vw, 20px);
+  right: min(-1.5972222222vw, -23px);
 }
 .tab_content_03 .box_fee_wrap {
-  padding: 80px 120px;
+  padding: min(5.5555555556vw, 80px) min(8.3333333333vw, 120px);
   position: relative;
 }
 .tab_content_03 .box_fee_wrap .icon {
   position: absolute;
 }
 .tab_content_03 .box_fee_wrap .icon_03 {
-  width: 184px;
-  height: 153px;
-  top: 222px;
-  left: 19px;
+  width: min(12.7777777778vw, 184px);
+  height: min(10.625vw, 153px);
+  top: min(15.4166666667vw, 222px);
+  left: min(1.3194444444vw, 19px);
 }
 .tab_content_03 .box_fee_wrap .icon_04 {
-  width: 159px;
-  height: 144px;
-  top: 215px;
-  right: 30px;
+  width: min(11.0416666667vw, 159px);
+  height: min(10vw, 144px);
+  top: min(14.9305555556vw, 215px);
+  right: min(2.0833333333vw, 30px);
 }
 .tab_content_03 .box_fee_wrap .icon_05 {
-  width: 247px;
-  height: 250px;
-  bottom: 98px;
-  left: -68px;
+  width: min(17.1527777778vw, 247px);
+  height: min(17.3611111111vw, 250px);
+  bottom: min(6.8055555556vw, 98px);
+  left: min(-4.7222222222vw, -68px);
 }
 .tab_content_03 .box_fee_wrap .icon_06 {
-  width: 242px;
-  height: 238px;
-  bottom: 111px;
-  right: -39px;
+  width: min(16.8055555556vw, 242px);
+  height: min(16.5277777778vw, 238px);
+  bottom: min(7.7083333333vw, 111px);
+  right: min(-2.7083333333vw, -39px);
 }
 .tab_content_03 .box_fee .title {
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 900;
   background-color: #CC0033;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: min(0.6944444444vw, 10px);
 }
 .tab_content_03 .box_fee .content {
-  padding: 33px 100px 0 100px;
+  padding: min(2.2916666667vw, 33px) min(6.9444444444vw, 100px) 0 min(6.9444444444vw, 100px);
 }
 .tab_content_03 .box_fee .desc {
-  font-size: 18px;
+  font-size: min(1.25vw, 18px);
   font-weight: 400;
   line-height: 1.6;
   text-align: center;
-  margin-bottom: 33px;
+  margin-bottom: min(2.2916666667vw, 33px);
 }
 .tab_content_03 .box_fee .heading {
   width: fit-content;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: min(2.7777777778vw, 40px);
   font-weight: 900;
   line-height: 1.53;
   color: #000000;
   text-align: center;
-  border-bottom: 1px solid #000000;
-  padding-bottom: 18px;
-  margin-bottom: 33px;
+  padding-bottom: min(1.25vw, 18px);
+  margin-bottom: min(2.2916666667vw, 33px);
+  position: relative;
+}
+.tab_content_03 .box_fee .heading::after {
+  content: "";
+  width: min(25.3472222222vw, 365px);
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
 }
 .tab_content_03 .box_fee .heading span {
   display: block;
-  font-size: 32px;
+  font-size: min(2.2222222222vw, 32px);
 }
 .tab_content_03 .box_fee .list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 59px;
+  margin-bottom: min(4.0972222222vw, 59px);
 }
 .tab_content_03 .box_fee .list .item {
   flex: 1;
@@ -1200,43 +1219,43 @@ sub {
 .tab_content_03 .box_fee .list .item.is-cost .cont {
   background-color: #fff;
   margin-left: -1px;
-  padding-right: 122px;
+  padding-right: min(8.4722222222vw, 122px);
 }
 .tab_content_03 .box_fee .list .item.is-cost .row {
   color: #CC0033;
 }
 .tab_content_03 .box_fee .list .head {
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 900;
   color: #fff;
   background-color: #CC0033;
   text-align: center;
-  padding: 10px;
+  padding: min(0.6944444444vw, 10px);
   border: 1px solid #CC0033;
   box-sizing: border-box;
 }
 .tab_content_03 .box_fee .list .cont {
-  padding: 20px 150px 20px 20px;
+  padding: min(1.3888888889vw, 20px) min(10.4166666667vw, 150px) min(1.3888888889vw, 20px) min(1.3888888889vw, 20px);
   background-color: rgba(204, 0, 51, 0.15);
   border: 1px solid #CC0033;
   box-sizing: border-box;
 }
 .tab_content_03 .box_fee .list .row {
-  font-size: 28px;
+  font-size: min(1.9444444444vw, 28px);
   font-weight: 900;
   text-align: right;
 }
 .tab_content_03 .box_fee .list .row:not(:first-of-type) {
-  margin-top: 20px;
+  margin-top: min(1.3888888889vw, 20px);
 }
 .tab_content_03 .box_fee .list .row span {
-  font-size: 48px;
+  font-size: min(3.3333333333vw, 48px);
 }
 .tab_content_03 .box_fee .note {
-  max-width: 478px;
+  max-width: min(33.1944444444vw, 478px);
   width: 100%;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: min(0.8333333333vw, 12px);
   font-weight: 400;
   line-height: 1.8;
   text-align: left;
@@ -1249,16 +1268,16 @@ sub {
 }
 .tab_content_03 .box_footer {
   background-color: #FFDADA;
-  padding: 80px 213px;
+  padding: min(5.5555555556vw, 80px) min(8.5416666667vw, 123px);
 }
 .tab_content_03 .box_footer .button_wrap {
-  gap: 60px;
+  gap: min(4.1666666667vw, 60px);
 }
 .tab_content_03 .box_banner {
-  padding-top: 80px;
+  padding-top: min(5.5555555556vw, 80px);
 }
 .tab_content_03 .box_banner .banner {
-  max-width: 660px;
+  max-width: min(45.8333333333vw, 660px);
   width: 100%;
   margin: 0 auto;
   transition: all 0.3s;
@@ -1274,7 +1293,7 @@ sub {
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100px;
+  height: min(6.9444444444vw, 100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1284,7 +1303,7 @@ sub {
   display: flex;
 }
 .navi_under_wrap {
-  max-width: 1000px;
+  max-width: min(69.4444444444vw, 1000px);
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1292,7 +1311,7 @@ sub {
   align-items: center;
 }
 .navi_under_wrap .button {
-  width: 371px;
+  width: min(25.7638888889vw, 371px);
   border-radius: 40px;
   color: #fff;
   transition: all 0.3s;
@@ -1302,14 +1321,14 @@ sub {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: min(1.3888888889vw, 20px);
 }
 .navi_under_wrap .button.is-blue {
   background-color: #2A238F;
 }
 .navi_under_wrap .button.is-blue .link::after {
-  width: 12px;
-  height: 20px;
+  width: min(0.8333333333vw, 12px);
+  height: min(1.3888888889vw, 20px);
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.98438 2.4751L9.01562 10.4751L1.98438 18.4751' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
 }
 .navi_under_wrap .button.is-blue:hover {
@@ -1319,8 +1338,8 @@ sub {
   background-color: #CC0033;
 }
 .navi_under_wrap .button.is-red .link::after {
-  width: 21px;
-  height: 15px;
+  width: min(1.4583333333vw, 21px);
+  height: min(1.0416666667vw, 15px);
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.67139' y='0.75' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M0.857117 4.49268V13.7498H17.0571' stroke='white'/%3E%3C/svg%3E%0A");
 }
 .navi_under_wrap .button.is-red:hover {
@@ -1329,13 +1348,13 @@ sub {
 .navi_under_wrap .link {
   width: 100%;
   height: 100%;
-  padding: 23px;
+  padding: min(1.5972222222vw, 23px);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: min(1.6666666667vw, 24px);
   font-weight: 700;
-  gap: 10px;
+  gap: min(0.6944444444vw, 10px);
 }
 .navi_under_wrap .link::after {
   display: inline-block;
@@ -1446,10 +1465,13 @@ sub {
     font-size: 3.0534351145vw;
   }
   .tab_content .main_image_desc .txt_02, .tab_content .main_image_desc .txt_03, .tab_content .main_image_desc .txt_04, .tab_content .main_image_desc .txt_05 {
-    padding-left: 8.9058524173vw;
+    padding-left: 11.4503816794vw;
   }
   .tab_content .main_image_desc .txt_02 span {
     flex-shrink: 0;
+  }
+  .tab_content .main_image_desc .txt_03, .tab_content .main_image_desc .txt_04, .tab_content .main_image_desc .txt_05 {
+    gap: 5.5979643766vw;
   }
   .tab_content .box_footer {
     padding: 15.2671755725vw 5.5979643766vw 15.2671755725vw;
@@ -1637,9 +1659,7 @@ sub {
   .tab_content_01 .box_fee_item .discount .desc {
     font-size: 3.0534351145vw;
     margin-bottom: 2.5445292621vw;
-    text-align: left;
-    display: flex;
-    gap: 1px;
+    margin-left: 0;
   }
   .tab_content_01 .box_fee_item .discount .cost {
     font-size: 5.5979643766vw;
@@ -2022,11 +2042,6 @@ sub {
     font-size: 3.0534351145vw;
     padding: 3.8167938931vw;
     gap: 2.5445292621vw;
-  }
-}
-@media screen and (min-width: 768px) {
-  html, body {
-    min-width: 1440px;
   }
 }
 /*# sourceMappingURL=../sourcemaps/css/common.css.map */

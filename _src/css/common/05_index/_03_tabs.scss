@@ -10,7 +10,7 @@
   &_heading {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 19px;
+    margin-bottom: vw-min(19);
 
     @include mq('small') {
       justify-content: space-between;
@@ -20,7 +20,7 @@
     .item {
       &.is-blue {
         border-bottom: 1px solid #2A238F;
-        margin-left: 285px;
+        margin-left: vw-min(285);
         .text {
           color: #2A238F;
         }
@@ -31,7 +31,7 @@
       }
       &.is-red {
         border-bottom: 1px solid #E70626;
-        margin-right: 99px;
+        margin-right: vw-min(99);
 
         @include mq('small') {
           margin-right: 0;
@@ -40,12 +40,12 @@
           color: #E70626;
         }
       }
-      width: 226px;
+      width: vw-min(226);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-bottom: 10px;
+      padding-bottom: vw-min(10);
 
       @include mq('small') {
         width: vw-s(114);
@@ -54,9 +54,9 @@
     }
     .text {
       &.is-small {
-        font-size: 18px;
+        font-size: vw-min(18);
       }
-      font-size: 24px;
+      font-size: vw-min(24);
       font-weight: 700;
       line-height: 1.1;
       text-align: center;
@@ -83,7 +83,7 @@
         padding: 0 4px;
       }
       img {
-        width: 228px;
+        width: vw-min(228);
 
         @include mq('small') {
           width: 100%;
@@ -96,9 +96,9 @@
     }
     &.is-02 {
       img {
-        width: 212px;
+        width: vw-min(212);
         position: relative;
-        top: 5px;
+        top: vw-min(5);
 
         @include mq('small') {
           width: 100%;
@@ -111,14 +111,14 @@
       }
     }
     &.is-03 {
-      width: 413px;
+      width: vw-min(413);
 
       @include mq('small') {
         width: vw-s(114);
         padding: 0 5px;
       }
       img {
-        width: 236px;
+        width: vw-min(236);
 
         @include mq('small') {
           width: 100%;
@@ -131,8 +131,8 @@
       margin-left: auto;
       margin-right: 1px;
     }
-    width: 403px;
-    height: 130px;
+    width: vw-min(403);
+    height: vw-min(130);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,6 @@
     border-width: 1px 1px 0 1px;
     border-color: #000;
     border-radius: 10px 10px 0 0;
-    margin-left: -1px;
     transition: all 0.3s;
 
     @include mq('small') {
@@ -165,7 +164,7 @@
       margin-top: -1px;
       position: relative;
       &_desc {
-        padding: 30px 50px;
+        padding: vw-min(30) vw-min(50);
         background-color: #E2E2E2;
 
         @include mq('small') {
@@ -174,12 +173,20 @@
 
         .txt {
           display: flex;
-          gap: 12px;
-          font-size: 12px;
+          gap: vw-min(12);
+          font-size: vw-min(12);
           line-height: 1.82;
           color: #000000;
+          &_sub {
+            display: flex;
+          }
           &_02 {
-            padding-left: 38px;
+            padding-left: vw-min(41);
+          }
+          &_03,
+          &_04,
+          &_05 {
+            gap: vw-min(22);
           }
 
           @include mq('small') {
@@ -189,12 +196,17 @@
             &_03,
             &_04,
             &_05 {
-              padding-left: vw-s(35);
+              padding-left: vw-s(45);
             }
             &_02 {
               span {
                 flex-shrink: 0;
               }
+            }
+            &_03,
+            &_04,
+            &_05 {
+              gap: vw-s(22);
             }
           }
         }
@@ -217,7 +229,7 @@
         background-color: #FFDADA;
       }
       background-color: #CFEAFF;
-      padding: 60px 229px;
+      padding: vw-min(60) vw-min(229);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -230,7 +242,7 @@
       .button {
         &_wrap {
           display: flex;
-          gap: 40px;
+          gap: vw-min(40);
 
           @include mq('small') {
             flex-direction: column;
@@ -245,11 +257,11 @@
           &.is-red {
             color: #CC0033;
           }
-          font-size: 24px;
+          font-size: vw-min(24);
           font-weight: 700;
           line-height: 1.6;
           text-align: center;
-          margin-bottom: 47px;
+          margin-bottom: vw-min(47);
 
           @include mq('small') {
             @include fz-s(24);
@@ -259,15 +271,15 @@
         }
         &_note {
           width: 100%;
-          margin-top: 40px;
+          margin-top: vw-min(40);
           .txt {
-            font-size: 12px;
+            font-size: vw-min(12);
             line-height: 1.85;
             color: #000;
             display: flex;
             gap: 1px;
             text-align: left;
-            margin-left: 4px;
+            margin-left: vw-min(4);
           }
 
           @include mq('small') {
@@ -279,7 +291,7 @@
           }
         }
         &:not(:first-of-type) {
-          margin-top: 20px;
+          margin-top: vw-min(20);
 
           @include mq('small') {
             margin-top: vw-s(20);
@@ -295,8 +307,8 @@
         &.is-blue {
           background-color: #2A238F;
           &::after {
-            width: 12px;
-            height: 20px;
+            width: vw-min(12);
+            height: vw-min(20);
             background-image: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.98438 2.4751L9.01562 10.4751L1.98438 18.4751' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
 
             @include mq('small') {
@@ -311,8 +323,8 @@
         &.is-red {
           background-color: #CC0033;
           &::after {
-            width: 21px;
-            height: 15px;
+            width: vw-min(21);
+            height: vw-min(15);
             background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.67139' y='0.75' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M0.857117 4.49268V13.7498H17.0571' stroke='white'/%3E%3C/svg%3E%0A");
 
             @include mq('small') {
@@ -324,30 +336,30 @@
             background-color: #EA6486;
           }
         }
-        width: 371px;
+        width: vw-min(371);
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        font-size: 24px;
+        gap: vw-min(20);
+        font-size: vw-min(24);
         font-weight: 700;
         line-height: 1.1;
         color: #fff;
         border-radius: 40px;
-        padding: 27px;
+        padding: vw-min(27);
         transition: all 0.3s;
         position: relative;
         .note {
           position: absolute;
           left: 50%;
-          top: calc(-50% + 12px);
+          top: calc(-50% + vw-min(12));
           transform: translateX(-50%);
-          font-size: 16px;
+          font-size: vw-min(16);
           font-weight: 700;
           background-color: #fff;
           color: #000;
           border: 1px solid #000;
-          padding: 11px 9px;
+          padding: vw-min(11) vw-min(9);
           white-space: nowrap;
 
           @include mq('small') {
@@ -368,7 +380,7 @@
 
     // tab_content_01
     &_01 {
-      padding-bottom: 107px;
+      padding-bottom: vw-min(107);
 
       @include mq('small') {
         padding-bottom: vw-s(114);
@@ -376,9 +388,9 @@
 
       .main_image {
         .icon_01 {
-          width: 217px;
-          top: 87px;
-          left: 31px;
+          width: vw-min(217);
+          top: vw-min(87);
+          left: vw-min(31);
 
           @include mq('small') {
             width: vw-s(110);
@@ -387,9 +399,9 @@
           }
         }
         .icon_02 {
-          width: 196px;
-          top: 131px;
-          right: 17px;
+          width: vw-min(196);
+          top: vw-min(131);
+          right: vw-min(17);
 
           @include mq('small') {
             width: vw-s(120);
@@ -402,14 +414,14 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        margin-bottom: 48px;
+        margin-bottom: vw-min(48);
         &::before {
           content: '';
           width: 1px;
-          height: calc(100% - 20px);
+          height: calc(100% - vw-min(20));
           background-color: #ccc;
           position: absolute;
-          left: calc(50% + 40px);
+          left: calc(50% + vw-min(40));
           top: 0;
           transform: translateX(-50%);
         }
@@ -423,11 +435,11 @@
         }
 
         &_wrap {
-          padding: 82px 40px 60px;
+          padding:vw-min(82) vw-min(40) vw-min(60);
           .icon_03 {
-            width: 202px;
-            top: 1140px;
-            left: -51px;
+            width: vw-min(202);
+            top: vw-min(1140);
+            left: vw-min(-51);
           }
 
           @include mq('small') {
@@ -441,7 +453,7 @@
         }
         &_item {
           &.is-red {
-            width: 580px;
+            width: vw-min(580);
             @include mq('small') {
               width: 100%;
               border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -450,8 +462,8 @@
             }
 
             .logo {
-              width: 304px;
-              margin-bottom: 49px;
+              width: vw-min(304);
+              margin-bottom: vw-min(49);
 
               @include mq('small') {
                 width: vw-s(198);
@@ -459,7 +471,7 @@
               }
             }
             .price_list {
-              margin-bottom: 49px;
+              margin-bottom: vw-min(49);
 
               @include mq('small') {
                 margin-bottom: vw-s(41);
@@ -467,15 +479,15 @@
             }
           }
           &.is-gold {
-            width: 500px;
+            width: vw-min(500);
 
             @include mq('small') {
               width: 100%;
             }
 
             .logo {
-              width: 450px;
-              margin-bottom: 47px;
+              width: vw-min(450);
+              margin-bottom: vw-min(47);
               @include mq('small') {
                 width: vw-s(289);
                 margin-bottom: vw-s(33);
@@ -483,7 +495,7 @@
             }
             .price_package.is-one-col.is-gold {
               margin-bottom: 0;
-              margin-top: 42px;
+              margin-top: vw-min(42);
 
               @include mq('small') {
                 margin-top: vw-s(42);
@@ -497,7 +509,7 @@
             &.is-red {
               .title {
                 background-color: #D00F31;
-                padding: 15px;
+                padding: vw-min(15);
 
                 @include mq('small') {
                   padding: vw-s(7);
@@ -526,12 +538,12 @@
               }
               .item {
                 border-color: #806500;
-                min-height: 104px;
+                min-height: vw-min(104);
               }
               .cost {
                 color: #806500;
-                font-size: 28px;
-                margin-bottom: 20px;
+                font-size: vw-min(28);
+                margin-bottom: vw-min(20);
 
                 @include mq('small') {
                   @include fz-s(28);
@@ -540,7 +552,8 @@
               }
             }
 
-            margin-bottom: 44px;
+            margin-bottom: vw-min(44);
+
             @include mq('small') {
               margin-bottom: vw-s(40);
             }
@@ -548,9 +561,9 @@
             .title {
               background-color: #707070;
               color: #fff;
-              font-size: 24px;
+              font-size: vw-min(24);
               font-weight: 900;
-              padding: 11px;
+              padding: vw-min(11);
               text-align: center;
 
               @include mq('small') {
@@ -560,8 +573,8 @@
             }
             .desc {
               display: block;
-              font-size: 12px;
-              margin-top: 4px;
+              font-size: vw-min(12);
+              margin-top: vw-min(4);
 
               @include mq('small') {
                 font-size: vw-s(12);
@@ -586,7 +599,7 @@
                   margin: -1px 0;
                 }
               }
-              min-height: 120px;
+              min-height: vw-min(120);
               display: flex;
               flex-direction: column;
               flex: 1;
@@ -604,8 +617,8 @@
               background-color: #CECECE;
               text-align: center;
               font-weight: 900;
-              font-size: 18px;
-              padding: 4px;
+              font-size: vw-min(18);
+              padding: vw-min(4);
 
               @include mq('small') {
                 @include fz-s(18);
@@ -613,13 +626,13 @@
               }
             }
             .cost {
-              font-size: 22px;
+              font-size: vw-min(22);
               font-weight: 900;
               text-align: center;
               margin-top: auto;
-              margin-bottom: 12px;
+              margin-bottom: vw-min(12);
               span {
-                font-size: 46px;
+                font-size: vw-min(46);
               }
 
               @include mq('small') {
@@ -632,9 +645,9 @@
             }
             .num {
               display: inline-block;
-              font-size: 10px;
+              font-size: vw-min(10);
               line-height: 1;
-              transform: translateY(-7px);
+              transform: translateY(vw-min(-7));
             }
           }
           .price_list {
@@ -662,12 +675,12 @@
             }
             .heading {
               width: fit-content;
-              font-size: 24px;
+              font-size: vw-min(24);
               font-weight: 900;
               text-align: center;
-              margin: 0 auto 20px;
+              margin: 0 auto vw-min(20);
               border-bottom: 1px solid currentColor;
-              padding-bottom: 5px;
+              padding-bottom: vw-min(5);
 
               @include mq('small') {
                 @include fz-s(24);
@@ -677,17 +690,17 @@
             }
             .item {
               &:not(:first-of-type) {
-                margin-top: 2px;
+                margin-top: vw-min(2);
               }
               &:last-of-type {
-                padding-top: 20px;
+                padding-top: vw-min(20);
                 @include mq('small') {
                   padding-top: vw-s(13);
                 }
               }
               display: flex;
               align-items: center;
-              padding: 16px 20px;
+              padding: vw-min(16) vw-min(20);
               position: relative;
               @include mq('small') {
                 flex-direction: column;
@@ -702,9 +715,9 @@
             }
             .title {
               display: inline-block;
-              font-size: 16px;
+              font-size: vw-min(16);
               font-weight: 600;
-              margin-bottom: 4px;
+              margin-bottom: vw-min(4);
               position: relative;
 
               @include mq('small') {
@@ -714,10 +727,10 @@
             }
             .num {
               display: inline-block;
-              font-size: 10px;
+              font-size: vw-min(10);
               position: absolute;
-              top: 3px;
-              right: -16px;
+              top: vw-min(3);
+              right: vw-min(-16);
 
               @include mq('small') {
                 @include fz-s(10);
@@ -726,7 +739,7 @@
               }
             }
             .desc {
-              font-size: 12px;
+              font-size: vw-min(12);
               white-space: nowrap;
 
               @include mq('small') {
@@ -734,14 +747,14 @@
               }
             }
             .cost {
-              font-size: 18px;
+              font-size: vw-min(18);
               font-weight: 900;
               position: absolute;
               top: 50%;
-              right: 20px;
+              right: vw-min(20);
               transform: translateY(-50%);
               span {
-                font-size: 30px;
+                font-size: vw-min(30);
               }
 
               @include mq('small') {
@@ -757,8 +770,8 @@
           }
           .discount {
             background-color: #F3F3F3;
-            margin-top: 3px;
-            padding: 26px 100px 20px;
+            margin-top: vw-min(3);
+            padding: vw-min(26) vw-min(100) vw-min(20);
             text-align: center;
 
             @include mq('small') {
@@ -766,9 +779,9 @@
             }
 
             .title {
-              font-size: 16px;
+              font-size: vw-min(16);
               font-weight: 900;
-              margin-bottom: 4px;
+              margin-bottom: vw-min(4);
 
               @include mq('small') {
                 @include fz-s(16);
@@ -776,24 +789,26 @@
               }
             }
             .desc {
-              font-size: 12px;
-              margin-bottom: 10px;
+              font-size: vw-min(12);
+              margin-bottom: vw-min(10);
+              text-align: left;
+              display: flex;
+              gap: 1px;
+              margin-left: vw-min(10);
               white-space: nowrap;
 
               @include mq('small') {
                 @include fz-s(12);
                 margin-bottom: vw-s(10);
-                text-align: left;
-                display: flex;
-                gap: 1px;
+                margin-left: 0;
               }
             }
             .cost {
-              font-size: 22px;
+              font-size: vw-min(22);
               font-weight: 900;
               color: #806500;
               span {
-                font-size: 46px;
+                font-size: vw-min(46);
               }
 
               @include mq('small') {
@@ -806,7 +821,7 @@
           }
           .point {
             &s {
-              margin-top: 42px;
+              margin-top: vw-min(42);
               text-align: center;
 
               @include mq('small') {
@@ -814,13 +829,13 @@
               }
 
               .title {
-                font-size: 16px;
+                font-size: vw-min(16);
                 font-weight: 900;
-                margin-bottom: 10px;
+                margin-bottom: vw-min(10);
                 .num {
                   display: inline-block;
-                  font-size: 10px;
-                  transform: translateY(-6px);
+                  font-size: vw-min(10);
+                  transform: translateY(vw-min(-6));
                 }
 
                 @include mq('small') {
@@ -833,13 +848,13 @@
                 }
               }
               .note {
-                font-size: 12px;
+                font-size: vw-min(12);
                 display: block;
                 color: #333333;
                 span {
                   position: relative;
-                  font-size: 8px;
-                  top: -4px;
+                  font-size: vw-min(8);
+                  top: vw-min(-4);
                 }
 
                 @include mq('small') {
@@ -849,11 +864,11 @@
               }
             }
             .txt1 {
-              font-size: 12px;
+              font-size: vw-min(12);
               font-weight: 900;
               line-height: 1.1;
               color: #806500;
-              margin-bottom: 5px;
+              margin-bottom: vw-min(5);
 
               @include mq('small') {
                 @include fz-s(12);
@@ -861,16 +876,16 @@
               }
             }
             .number {
-              font-size: 18px;
+              font-size: vw-min(18);
               font-weight: 900;
               line-height: 1.1;
               color: #806500;
-              margin-bottom: 5px;
+              margin-bottom: vw-min(5);
               span {
-                font-size: 46px;
+                font-size: vw-min(46);
               }
               .pt {
-                font-size: 18px;
+                font-size: vw-min(18);
               }
 
               @include mq('small') {
@@ -888,8 +903,8 @@
         }
       }
       .box_logo {
-        padding: 0 10px;
-        margin-bottom: 20px;
+        padding: 0 vw-min(10);
+        margin-bottom: vw-min(20);
 
         @include mq('small') {
           padding: 0;
@@ -899,7 +914,7 @@
         .list {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 15px;
+          gap: vw-min(15);
 
           @include mq('small') {
             grid-template-columns: repeat(1, 1fr);
@@ -908,9 +923,9 @@
         }
         .item {
           &_01 {
-            padding-top: 29px;
+            padding-top: vw-min(29);
             .image {
-              margin-bottom: 28px;
+              margin-bottom: vw-min(28);
             }
             .txt-big {
               position: relative;
@@ -918,27 +933,27 @@
             }
           }
           &_02 {
-            padding-top: 31px;
+            padding-top: vw-min(31);
             .image {
-              margin-bottom: 23px;
+              margin-bottom: vw-min(23);
             }
             .txt-big {
               position: relative;
-              left: 1px;
+              left: vw-min(1);
             }
           }
           &_03 {
-            padding-top: 27px;
+            padding-top: vw-min(27);
             .image {
-              margin-bottom: 14px;
+              margin-bottom: vw-min(14);
             }
           }
 
           background-color: #F2F2F2;
-          min-height: 200px;
+          min-height: vw-min(200);
           display: flex;
           flex-direction: column;
-          padding: 20px;
+          padding: vw-min(20);
 
           @include mq('small') {
             padding: vw-s(12);
@@ -981,18 +996,18 @@
           }
         }
         .txt-small {
-          font-size: 16px;
+          font-size: vw-min(16);
           white-space: nowrap;
           .txt1,
           .txt2 {
-            font-size: 18px;
+            font-size: vw-min(18);
             position: relative;
           }
           .txt1 {
-            right: -5px;
+            right: vw-min(-5);
           }
           .txt2 {
-            right: 5px;
+            right: vw-min(5);
           }
 
           @include mq('small') {
@@ -1004,8 +1019,8 @@
           }
         }
         .txt-xsmall {
-          font-size: 10px;
-          margin-top: 3px;
+          font-size: vw-min(10);
+          margin-top: vw-min(3);
 
           @include mq('small') {
             @include fz-s(10);
@@ -1013,16 +1028,16 @@
           }
         }
         .txt-big {
-          font-size: 24px;
-          margin-top: 2px;
+          font-size: vw-min(24);
+          margin-top: vw-min(2);
           .num {
-            font-size: 15px;
+            font-size: vw-min(15);
             display: inline-block;
-            transform: translateY(-9px);
+            transform: translateY(vw-min(-9));
           }
           .chr {
             display: inline-block;
-            margin-right: -5px;
+            margin-right: vw-min(-5);
           }
 
           @include mq('small') {
@@ -1034,11 +1049,11 @@
           }
         }
         .txt-note {
-          font-size: 12px;
+          font-size: vw-min(12);
           font-weight: 400;
           letter-spacing: -0.07em;
           text-align: left;
-          margin-top: 5px;
+          margin-top: vw-min(5);
 
           @include mq('small') {
             @include fz-s(12);
@@ -1048,9 +1063,9 @@
         }
       }
       .description {
-        font-size: 12px;
+        font-size: vw-min(12);
         font-weight: 300;
-        padding: 0 11px;
+        padding: 0 vw-min(11);
         letter-spacing: 0.003em;
 
         @include mq('small') {
@@ -1060,9 +1075,9 @@
       }
       .box_footer {
         .icon_04 {
-          width: 218px;
-          top: 276px;
-          left: -47px;
+          width: vw-min(218);
+          top: vw-min(276);
+          left: vw-min(-47);
 
           @include mq('small') {
             width: vw-s(136);
@@ -1071,9 +1086,9 @@
           }
         }
         .icon_05 {
-          width: 279px;
-          top: 240px;
-          right: -64px;
+          width: vw-min(279);
+          top: vw-min(240);
+          right: vw-min(-64);
 
           @include mq('small') {
             width: vw-s(146);
@@ -1095,7 +1110,7 @@
 
     // tab_content_02
     &_02 {
-      padding-bottom: 100px;
+      padding-bottom: vw-min(100);
 
       @include mq('small') {
         padding-bottom: vw-s(114);
@@ -1105,10 +1120,10 @@
         position: relative;
         .icon {
           &_01 {
-            width: 319px;
-            height: 181px;
-            top: 43px;
-            left: -48px;
+            width: vw-min(319);
+            height: vw-min(181);
+            top: vw-min(43);
+            left: vw-min(-48);
 
             @include mq('small') {
               width: vw-s(87);
@@ -1117,10 +1132,10 @@
             }
           }
           &_02 {
-            width: 178px;
-            height: 247px;
-            top: 145px;
-            right: -30px;
+            width: vw-min(178);
+            height: vw-min(247);
+            top: vw-min(145);
+            right: vw-min(-30);
 
             @include mq('small') {
               width: vw-s(70);
@@ -1133,7 +1148,7 @@
       }
       .box_fee {
         &_wrap {
-          padding: 80px 120px;
+          padding: vw-min(80) vw-min(120);
 
           @include mq('small') {
             padding: vw-s(67) vw-s(20);
@@ -1141,13 +1156,13 @@
         }
         .basic_fee {
           position: relative;
-          margin-bottom: 41px;
+          margin-bottom: vw-min(41);
           .img_admin_fee {
-            width: 182px;
-            height: 190px;
+            width: vw-min(182);
+            height: vw-min(190);
             position: absolute;
-            top: -23px;
-            right: -74px;
+            top: vw-min(-23);
+            right: vw-min(-74);
 
             @include mq('small') {
               width: vw-s(91);
@@ -1157,12 +1172,12 @@
             }
           }
           .title {
-            font-size: 24px;
+            font-size: vw-min(24);
             font-weight: 900;
             background-color: #2A238F;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: vw-min(10);
 
             @include mq('small') {
               @include fz-s(24);
@@ -1172,7 +1187,7 @@
           .content {
             background-color: #fff;
             border: 1px solid #2A238F;
-            padding: 36px 219px 26px 219px;
+            padding: vw-min(36) vw-min(219) vw-min(26) vw-min(219);
             @include mq('small') {
               padding: vw-s(20);
             }
@@ -1181,9 +1196,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: vw-min(40);
             white-space: nowrap;
-            margin-bottom: 17px;
+            margin-bottom: vw-min(17);
 
             @include mq('small') {
               white-space: unset;
@@ -1192,11 +1207,11 @@
             }
           }
           .number {
-            font-size: 38px;
+            font-size: vw-min(38);
             font-weight: 900;
             color: #2A238F;
             background-color: rgba(42, 35, 143, 0.15);
-            padding: 18px 31px;
+            padding: vw-min(18) vw-min(31);
 
             @include mq('small') {
               @include fz-s(19);
@@ -1204,12 +1219,12 @@
             }
           }
           .cost {
-            font-size: 32px;
+            font-size: vw-min(32);
             font-weight: 900;
             color: #2A238F;
             line-height: 1;
             span {
-              font-size: 110px;
+              font-size: vw-min(110);
             }
 
             @include mq('small') {
@@ -1220,7 +1235,7 @@
             }
           }
           .note {
-            font-size: 16px;
+            font-size: vw-min(16);
             font-weight: 500;
             color: #000;
             text-align: center;
@@ -1233,28 +1248,28 @@
         .ahamo_fee {
           .heading {
             text-align: center;
-            margin-bottom: 66px;
+            margin-bottom: vw-min(66);
             .head {
-              font-size: 42px;
+              font-size: vw-min(42);
               font-weight: 900;
             }
             .txt_blue {
-              font-size: 52px;
+              font-size: vw-min(52);
               color: #2A238F;
             }
             .dot {
               display: inline-block;
-              font-size: 32px;
-              transform: translateY(-23px);
+              font-size: vw-min(32);
+              transform: translateY(vw-min(-23));
             }
             .note {
-              font-size: 16px;
+              font-size: vw-min(16);
               font-weight: 500;
               color: #000000;
               line-height: 1.1;
               letter-spacing: 0.1em;
               text-align: center;
-              margin-top: 3px;
+              margin-top: vw-min(3);
             }
 
             @include mq('small') {
@@ -1277,7 +1292,7 @@
           }
           .content {
             background-color: #E8F5FF;
-            padding: 21px 170px 60px 170px;
+            padding: vw-min(21) vw-min(170) vw-min(60) vw-min(170);
             position: relative;
 
             @include mq('small') {
@@ -1286,10 +1301,10 @@
 
             .icon {
               &_03 {
-                width: 322px;
-                height: 214px;
-                top: -99px;
-                left: -161px;
+                width: vw-min(322);
+                height: vw-min(214);
+                top: vw-min(-99);
+                left: vw-min(-161);
 
                 @include mq('small') {
                   width: vw-s(151);
@@ -1299,10 +1314,10 @@
                 }
               }
               &_04 {
-                width: 234px;
-                height: 198px;
-                top: -44px;
-                right: -59px;
+                width: vw-min(234);
+                height: vw-min(198);
+                top: vw-min(-44);
+                right: vw-min(-59);
 
                 @include mq('small') {
                   width: vw-s(107);
@@ -1312,10 +1327,10 @@
                 }
               }
               &_05 {
-                width: 260px;
-                height: 235px;
-                bottom: -54px;
-                left: -96px;
+                width: vw-min(260);
+                height: vw-min(235);
+                bottom: vw-min(-54);
+                left: vw-min(-96);
 
                 @include mq('small') {
                   width: vw-s(120);
@@ -1325,10 +1340,10 @@
                 }
               }
               &_06 {
-                width: 300px;
-                height: 233px;
-                bottom: -25px;
-                right: -151px;
+                width: vw-min(300);
+                height: vw-min(233);
+                bottom: vw-min(-25);
+                right: vw-min(-151);
 
                 @include mq('small') {
                   width: vw-s(140);
@@ -1340,8 +1355,8 @@
               position: absolute;
             }
             .title {
-              width: 472px;
-              margin: 0 auto 10px;
+              width: vw-min(472);
+              margin: 0 auto vw-min(10);
 
               @include mq('small') {
                 width: vw-s(236);
@@ -1351,10 +1366,10 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              gap: 30px;
+              gap: vw-min(30);
               white-space: nowrap;
-              margin-left: 14px;
-              margin-bottom: 39px;
+              margin-left: vw-min(14);
+              margin-bottom: vw-min(39);
 
               @include mq('small') {
                 flex-direction: column;
@@ -1365,11 +1380,11 @@
               }
             }
             .number {
-              font-size: 38px;
+              font-size: vw-min(38);
               font-weight: 900;
               color: #fff;
               background-color: #0D78C9;
-              padding: 17px 20px;
+              padding: vw-min(17) vw-min(20);
 
               @include mq('small') {
                 @include fz-s(19);
@@ -1377,12 +1392,12 @@
               }
             }
             .cost {
-              font-size: 42px;
+              font-size: vw-min(42);
               font-weight: 900;
               color: #0D78C9;
               line-height: 1;
               span {
-                font-size: 110px;
+                font-size: vw-min(110);
               }
 
               @include mq('small') {
@@ -1393,11 +1408,11 @@
               }
             }
             span.tax {
-              font-size: 20px;
+              font-size: vw-min(20);
               font-weight: 400;
               color: #333333;
               position: relative;
-              left: -10px;
+              left: vw-min(-10);
 
               @include mq('small') {
                 @include fz-s(10);
@@ -1408,8 +1423,8 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              gap: 20px;
-              margin-bottom: 19px;
+              gap: vw-min(20);
+              margin-bottom: vw-min(19);
 
               @include mq('small') {
                 flex-direction: column;
@@ -1418,31 +1433,31 @@
             .item {
               &_01 {
                 .logo {
-                  margin-bottom: 10px;
+                  margin-bottom: vw-min(10);
                 }
               }
               &_02 {
-                width: 271px;
+                width: vw-min(271);
                 .logo {
-                  margin-bottom: 20px;
+                  margin-bottom: vw-min(20);
                 }
 
                 @include mq('small') {
                   width: 100%;
                 }
               }
-              width: 291px;
+              width: vw-min(291);
               background-color: #fff;
               border: 1px solid #707070;
-              padding: 10px;
+              padding: vw-min(10);
 
               @include mq('small') {
                 width: 100%;
               }
             }
             .plus {
-              width: 25px;
-              height: 25px;
+              width: vw-min(25);
+              height: vw-min(25);
               svg {
                 width: 100%;
                 height: 100%;
@@ -1458,16 +1473,16 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              gap: 10px;
+              gap: vw-min(10);
               white-space: nowrap;
-              margin-left: 7px;
+              margin-left: vw-min(7);
             }
             .num {
-              font-size: 23px;
+              font-size: vw-min(23);
               color: #707070;
               font-weight: 800;
               background-color: rgba(112, 112, 112, .15);
-              padding: 9px 10px;
+              padding: vw-min(9) vw-min(10);
 
               @include mq('small') {
                 @include fz-s(17);
@@ -1475,15 +1490,15 @@
               }
             }
             .cos {
-              font-size: 22px;
+              font-size: vw-min(22);
               color: #707070;
               font-weight: 900;
               span {
-                font-size: 42px;
+                font-size: vw-min(42);
                 &.dot {
                   display: inline-block;
-                  font-size: 15px;
-                  transform: translateY(-7px);
+                  font-size: vw-min(15);
+                  transform: translateY(vw-min(-7));
                 }
               }
 
@@ -1499,10 +1514,10 @@
               }
             }
             .note {
-              font-size: 12px;
+              font-size: vw-min(12);
               color: #000000;
               font-weight: 500;
-              margin-left: 15px;
+              margin-left: vw-min(15);
               line-height: 1.1;
               letter-spacing: 0.1em;
 
@@ -1515,14 +1530,14 @@
         }
       }
       .box_footer {
-        padding: 80px 229px;
+        padding: vw-min(80) vw-min(229);
       }
     
     }
 
     // tab_content_03
     &_03 {
-      padding-bottom: 89px;
+      padding-bottom: vw-min(89);
 
       @include mq('small') {
         padding-bottom: vw-s(114);
@@ -1533,10 +1548,10 @@
         .icon {
           position: absolute;
           &_01 {
-            width: 295px;
-            height: 288px;
-            top: 100px;
-            left: -83px;
+            width: vw-min(295);
+            height: vw-min(288);
+            top: vw-min(100);
+            left: vw-min(-83);
 
             @include mq('small') {
               width: vw-s(137);
@@ -1546,10 +1561,10 @@
             }
           }
           &_02 {
-            width: 185px;
-            height: 276px;
-            top: 20px;
-            right: -23px;
+            width: vw-min(185);
+            height: vw-min(276);
+            top: vw-min(20);
+            right: vw-min(-23);
 
             @include mq('small') {
               width: vw-s(82);
@@ -1562,7 +1577,7 @@
       }
       .box_fee {
         &_wrap {
-          padding: 80px 120px;
+          padding: vw-min(80) vw-min(120);
           position: relative;
 
           @include mq('small') {
@@ -1571,10 +1586,10 @@
           .icon {
             position: absolute;
             &_03 {
-              width: 184px;
-              height: 153px;
-              top: 222px;
-              left: 19px;
+              width: vw-min(184);
+              height: vw-min(153);
+              top: vw-min(222);
+              left: vw-min(19);
 
               @include mq('small') {
                 width: vw-s(82);
@@ -1584,10 +1599,10 @@
               }
             }
             &_04 {
-              width: 159px;
-              height: 144px;
-              top: 215px;
-              right: 30px;
+              width: vw-min(159);
+              height: vw-min(144);
+              top: vw-min(215);
+              right: vw-min(30);
 
               @include mq('small') {
                 width: vw-s(89);
@@ -1597,10 +1612,10 @@
               }
             }
             &_05 {
-              width: 247px;
-              height: 250px;
-              bottom: 98px;
-              left: -68px;
+              width: vw-min(247);
+              height: vw-min(250);
+              bottom: vw-min(98);
+              left: vw-min(-68);
 
               @include mq('small') {
                 width: vw-s(113);
@@ -1610,10 +1625,10 @@
               }
             }
             &_06 {
-              width: 242px;
-              height: 238px;
-              bottom: 111px;
-              right: -39px;
+              width: vw-min(242);
+              height: vw-min(238);
+              bottom: vw-min(111);
+              right: vw-min(-39);
 
               @include mq('small') {
                 width: vw-s(111);
@@ -1625,12 +1640,12 @@
           }
         }
         .title {
-          font-size: 24px;
+          font-size: vw-min(24);
           font-weight: 900;
           background-color: #CC0033;
           color: #fff;
           text-align: center;
-          padding: 10px;
+          padding: vw-min(10);
 
           @include mq('small') {
             font-size: vw-s(24);
@@ -1638,18 +1653,18 @@
           }
         }
         .content {
-          padding: 33px 100px 0 100px;
+          padding: vw-min(33) vw-min(100) 0 vw-min(100);
 
           @include mq('small') {
             padding: vw-s(20);
           }
         }
         .desc {
-          font-size: 18px;
+          font-size: vw-min(18);
           font-weight: 400;
           line-height: 1.6;
           text-align: center;
-          margin-bottom: 33px;
+          margin-bottom: vw-min(33);
 
           @include mq('small') {
             @include fz-s(10);
@@ -1660,17 +1675,27 @@
         .heading {
           width: fit-content;
           margin: 0 auto;
-          font-size: 40px;
+          font-size: vw-min(40);
           font-weight: 900;
           line-height: 1.53;
           color: #000000;
           text-align: center;
-          border-bottom: 1px solid #000000;
-          padding-bottom: 18px;
-          margin-bottom: 33px;
+          padding-bottom: vw-min(18);
+          margin-bottom: vw-min(33);
+          position: relative;
+          &::after {
+            content: '';
+            width: vw-min(365);
+            height: 1px;
+            background-color: #000000;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+          }
           span {
             display: block;
-            font-size: 32px;
+            font-size: vw-min(32);
           }
 
           @include mq('small') {
@@ -1686,7 +1711,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-bottom: 59px;
+          margin-bottom: vw-min(59);
 
           @include mq('small') {
             flex-direction: column;
@@ -1716,7 +1741,7 @@
               .cont {
                 background-color: #fff;
                 margin-left: -1px;
-                padding-right: 122px;
+                padding-right: vw-min(122);
 
                 @include mq('small') {
                   margin-left: 0;
@@ -1729,12 +1754,12 @@
             }
           }
           .head {
-            font-size: 24px;
+            font-size: vw-min(24);
             font-weight: 900;
             color: #fff;
             background-color: #CC0033;
             text-align: center;
-            padding: 10px;
+            padding: vw-min(10);
             border: 1px solid #CC0033;
             box-sizing: border-box;
 
@@ -1744,7 +1769,7 @@
             }
           }
           .cont {
-            padding: 20px 150px 20px 20px;
+            padding: vw-min(20) vw-min(150) vw-min(20) vw-min(20);
             background-color: rgba(204, 0, 51, .15);
             border: 1px solid #CC0033;
             box-sizing: border-box;
@@ -1755,13 +1780,13 @@
           }
           .row {
             &:not(:first-of-type) {
-              margin-top: 20px;
+              margin-top: vw-min(20);
             }
-            font-size: 28px;
+            font-size: vw-min(28);
             font-weight: 900;
             text-align: right;
             span {
-              font-size: 48px;
+              font-size: vw-min(48);
             }
 
             @include mq('small') {
@@ -1776,10 +1801,10 @@
           }
         }
         .note {
-          max-width: 478px;
+          max-width: vw-min(478);
           width: 100%;
           margin: 0 auto;
-          font-size: 12px;
+          font-size: vw-min(12);
           font-weight: 400;
           line-height: 1.8;
           text-align: left;
@@ -1798,20 +1823,20 @@
       }
       .box_footer {
         background-color: #FFDADA;
-        padding: 80px 213px;
+        padding: vw-min(80) vw-min(123);
         .button {
           &_wrap {
-            gap: 60px;
+            gap: vw-min(60);
           }
         }
       }
       .box_banner {
-        padding-top: 80px;
+        padding-top: vw-min(80);
         .banner {
           &:hover {
             opacity: 0.8;
           }
-          max-width: 660px;
+          max-width: vw-min(660);
           width: 100%;
           margin: 0 auto;
           transition: all 0.3s;

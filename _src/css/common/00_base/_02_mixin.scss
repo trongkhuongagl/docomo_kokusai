@@ -58,6 +58,11 @@
 	@return calc($value / 393 * 100vw);
 }
 
+@function vw-min($px, $design-width: 1440) {
+  $vw: ($px / $design-width) * 100;
+  @return min(#{$vw}vw, #{$px}px);
+}
+
 @mixin hover {
   transition: opacity .2s;
   &:hover {

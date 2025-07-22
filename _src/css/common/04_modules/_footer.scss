@@ -10,7 +10,7 @@
   background: #3C3C3C;
   color: #FFFFFF;
   text-align: center;
-  padding: 86px 10px 140px;
+  padding: vw-min(86) vw-min(10) vw-min(140);
 
   @include mq('small') {
     text-align: left;
@@ -21,7 +21,7 @@
 .footer_nav {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: vw-min(40);
 
   @include mq('small') {
     gap: vw-s(33);
@@ -33,22 +33,22 @@
 .footer_nav_a {
   .e-ico {
     display: inline-block;
-    width: 21px;
-    height: 15px;
+    width: vw-min(21);
+    height: vw-min(15);
     background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.8143' y='1' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M1 4.74268V13.9998H17.2' stroke='white'/%3E%3C/svg%3E%0A");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 10px;
+    margin-left: vw-min(10);
     position: relative;
-    top: 5px;
+    top: vw-min(5);
 
     @include mq('small') {
       top: vw-s(1);
     }
   }
 
-  font-size: 16px;
+  font-size: vw-min(16);
   line-height: 1.1;
   text-decoration: underline;
 
@@ -70,9 +70,9 @@
 }
 
 .footer_coryright {
-  font-size: 14px;
+  font-size: vw-min(14);
   line-height: 1.1;
-  margin: 60px 0 0;
+  margin: vw-min(60) 0 0;
 
   @include mq('small') {
     @include fz-s(14);
