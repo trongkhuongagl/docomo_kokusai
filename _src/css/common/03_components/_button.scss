@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@use "sass:math";
+@use "common/00_base/_00_index" as *;
+
+//
+// c-button01
+//
+.c-button01 {
+  &::after {
+    display: inline-block;
+    content: '';
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+  }
+  &.is-blue {
+    background-color: #2A238F;
+    &::after {
+      width: vw-min(12);
+      height: vw-min(20);
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='20' viewBox='0 0 12 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.98438 2.4751L9.01562 10.4751L1.98438 18.4751' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+
+      @include mq('small') {
+        width: vw-s(9);
+        height: vw-s(16);
+      }
+    }
+    &:hover {
+      background-color: #7E77E9;
+    }
+  }
+  &.is-red {
+    background-color: #CC0033;
+    &::after {
+      width: vw-min(21);
+      height: vw-min(15);
+      background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3.67139' y='0.75' width='15.9714' height='9.8' stroke='white'/%3E%3Cpath d='M0.857117 4.49268V13.7498H17.0571' stroke='white'/%3E%3C/svg%3E%0A");
+
+      @include mq('small') {
+        width: vw-s(19);
+        height: vw-s(13);
+      }
+    }
+    &:hover {
+      background-color: #EA6486;
+    }
+  }
+  width: vw-min(371);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: vw-min(20);
+  font-size: vw-min(24);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+  border-radius: 40px;
+  padding: vw-min(27);
+  transition: all 0.3s;
+  position: relative;
+  .note {
+    position: absolute;
+    left: 50%;
+    top: calc(-50% + vw-min(12));
+    transform: translateX(-50%);
+    font-size: vw-min(16);
+    font-weight: 700;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: vw-min(11) vw-min(9);
+    white-space: nowrap;
+
+    @include mq('small') {
+      @include fz-s(16);
+      padding: vw-s(11) vw-s(9);
+      top: calc(-50% + 9px);
+    }
+  }
+
+  @include mq('small') {
+    width: vw-s(280);
+    @include fz-s(18);
+    padding: vw-s(30) vw-s(20);
+    gap: vw-s(10);
+  }
+}

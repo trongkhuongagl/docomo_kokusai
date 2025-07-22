@@ -6,12 +6,16 @@
 // Banner
 //
 .sec_banner {
-  max-width: vw-min(600);
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   padding: 51px 0;
   
   @include mq('small') {
     padding: vw-s(54) vw-s(20);
+  }
+
+  @include mq('medium2') {
+    max-width: vw-min(600);
   }
 }

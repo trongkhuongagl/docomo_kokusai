@@ -59,18 +59,26 @@ sub {
 }
 
 .l_container {
-  max-width: vw-min(1440);
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+
+  @include mq('medium2') {
+    max-width: vw-min(1440);
+  }
 }
 
 .c_inner {
-  max-width: vw-min(1240);
+  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
 
   @include mq('small') {
     padding: 0  vw-s(20);
+  }
+
+  @include mq('medium2') {
+    max-width: vw-min(1240);
   }
 }
 
