@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("js-anima-up-on");
-          // observer.unobserve(entry.target); // Bỏ comment nếu chỉ muốn chạy 1 lần
+          // Uncomment if you only want to run once
+          // observer.unobserve(entry.target);
         }
       });
     },
