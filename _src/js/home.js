@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById(button.dataset.tab).classList.add('active');
 
       // Show the corresponding fixed menu
-      const naviId = `navi${index + 1}`;
+      const naviId = `navi0${index + 1}`;
       const navi = document.getElementById(naviId);
       if (navi) {
         navi.classList.add('active');

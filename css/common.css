@@ -2275,6 +2275,10 @@ sub {
     top: -5.8524173028vw;
     right: -5.0890585242vw;
   }
+  .tab_content_02 .box_fee .basic_fee .title {
+    font-size: 6.106870229vw;
+    padding: 2.5445292621vw;
+  }
   .tab_content_02 .box_fee .basic_fee .content {
     padding: 5.0890585242vw;
   }
@@ -2413,13 +2417,13 @@ sub {
     width: 20.8651399491vw;
     height: 14.2493638677vw;
     top: 25.4452926209vw;
-    left: 0vw;
+    left: -5.0890585242vw;
   }
   .tab_content_03 .box_fee_wrap .icon_04 {
     width: 22.6463104326vw;
     height: 15.7760814249vw;
     top: 25.4452926209vw;
-    right: 0vw;
+    right: -5.0890585242vw;
   }
   .tab_content_03 .box_fee_wrap .icon_05 {
     width: 28.7531806616vw;
@@ -2434,8 +2438,8 @@ sub {
     right: -5.0890585242vw;
   }
   .tab_content_03 .box_fee .title {
-    font-size: 5.0890585242vw;
-    padding: 1.272264631vw;
+    font-size: 6.106870229vw;
+    padding: 2.5445292621vw;
   }
   .tab_content_03 .box_fee .content {
     padding: 5.0890585242vw;
@@ -2443,6 +2447,7 @@ sub {
   .tab_content_03 .box_fee .desc {
     font-size: 2.5445292621vw;
     margin-bottom: 4.0712468193vw;
+    padding: 0 7.6335877863vw;
   }
   .tab_content_03 .box_fee .heading {
     font-size: 5.0890585242vw;
@@ -2471,8 +2476,8 @@ sub {
     padding-right: 25.4452926209vw;
   }
   .tab_content_03 .box_fee .list .head {
-    font-size: 5.0890585242vw;
-    padding: 1.272264631vw;
+    font-size: 6.106870229vw;
+    padding: 2.5445292621vw;
   }
   .tab_content_03 .box_fee .list .cont {
     padding: 2.5445292621vw 25.4452926209vw 2.5445292621vw 2.5445292621vw;
