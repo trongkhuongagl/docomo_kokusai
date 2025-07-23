@@ -87,8 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function toggleNaviContainer() {
     const scrollY = window.scrollY;
+    let targetShow = 0;
     
-    if ((scrollY - headerHeight) >= offsetTopMainImage) {
+    if (window.innerWidth < 768) {
+      targetShow = (scrollY - (headerHeight * 2)) >= offsetTopMainImage;
+    } else {
+      targetShow = scrollY >= offsetTopMainImage;
+    }
+    
+    if (targetShow) {
       naviContainer.classList.add('is-show');
     } else {
       naviContainer.classList.remove('is-show');
