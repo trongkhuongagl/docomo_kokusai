@@ -10,10 +10,10 @@
   background: #3C3C3C;
   color: #FFFFFF;
   text-align: center;
-  padding: vw-min(86) vw-min(10) vw-min(340);
+  padding: vw-min(86) vw-min(10) vw-min(290);
   &.is-02,
   &.is-03 {
-    padding-bottom: vw-min(260);
+    padding-bottom: vw-min(215);
   }
 
   @include mq('small') {

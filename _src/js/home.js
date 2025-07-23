@@ -1,3 +1,18 @@
+// Header
+document.addEventListener('DOMContentLoaded', function () {
+  function handleScrollHeader() {
+    const header = document.querySelector('.header');
+    const scrollY = window.scrollY;
+    if (scrollY > 0) {
+      header.classList.add('is-scale');
+    } else {
+      header.classList.remove('is-scale');
+    }
+  }
+
+  window.addEventListener('scroll', handleScrollHeader);
+});
+
 // Tabs
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.tab_button');
@@ -64,27 +79,32 @@ document.addEventListener("DOMContentLoaded", () => {
 // Navigation Under
 document.addEventListener('DOMContentLoaded', () => {
   const naviContainer = document.querySelector('.navi_under_container');
-  const triggerElement = document.querySelector('.js_tab_wrap');
-  if (!naviContainer || !triggerElement) return;
+  const headerHeight = document.querySelector('.header').offsetHeight;
+  let offsetTopMainImage = document.querySelector('#tab1 .js_main_image').offsetTop;
+  const tabButtons = document.querySelectorAll('.tab_button');
 
-  function getExtraOffset() {
-    return window.innerWidth <= 768 ? 550 : 350;
-  }
+  if (!naviContainer || !headerHeight || !offsetTopMainImage || !tabButtons) return;
 
   function toggleNaviContainer() {
-    const extraOffset = getExtraOffset();
-    const triggerTop = triggerElement.offsetTop;
     const scrollY = window.scrollY;
-
-    console.log('scrollY:', scrollY);
-    console.log('triggerTop + extraOffset:', triggerTop + extraOffset);
-
-    if (scrollY >= (triggerTop - extraOffset)) {
+    
+    if ((scrollY - headerHeight) >= offsetTopMainImage) {
       naviContainer.classList.add('is-show');
     } else {
       naviContainer.classList.remove('is-show');
     }
   }
+
+  // Click tab_button
+  tabButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const mainImages = document.querySelectorAll('.js_main_image');
+      const targetImage = mainImages[index];
+      if (targetImage) {
+        offsetTopMainImage = targetImage.offsetTop;
+      }
+    });
+  });
 
   toggleNaviContainer();
   window.addEventListener('scroll', toggleNaviContainer);

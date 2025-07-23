@@ -331,6 +331,14 @@
             right: vw-s(-20);
           }
         }
+        .txt {
+          .link {
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
       }
       .box_fee {
         display: flex;
@@ -1526,9 +1534,6 @@
       .main_image {
         position: relative;
 
-        @include mq('small') {
-          margin-bottom: vw-s(15);
-        }
         .icon {
           position: absolute;
           &_01 {
@@ -1555,6 +1560,23 @@
               height: vw-s(123);
               top: vw-s(247);
               right: vw-s(-8);
+            }
+          }
+        }
+
+        .note {
+          position: absolute;
+          top: vw-min(330);
+          right: vw-min(282);
+          font-size: vw-min(16);
+          font-weight: 400;
+          line-height: 1.4;
+          color: #000000;
+          &_link {
+            color: #2D287D;
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
             }
           }
         }

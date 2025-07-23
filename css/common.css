@@ -240,9 +240,17 @@ sub {
   width: 100%;
   background-color: #fff;
   z-index: 20;
+  transition: all 0.3s;
+}
+.header.is-scale {
+  padding: min(1.2638888889vw, 18.2px) min(1.4583333333vw, 21px) min(1.2152777778vw, 17.5px);
+}
+.header.is-scale .header_logo {
+  width: min(7.1944444444vw, 103.6px);
 }
 .header_logo {
-  width: 148px;
+  width: min(10.2777777778vw, 148px);
+  transition: all 0.3s;
 }
 .header_logo img {
   width: 100%;
@@ -254,10 +262,10 @@ sub {
   background: #3C3C3C;
   color: #FFFFFF;
   text-align: center;
-  padding: min(5.9722222222vw, 86px) min(0.6944444444vw, 10px) min(23.6111111111vw, 340px);
+  padding: min(5.9722222222vw, 86px) min(0.6944444444vw, 10px) min(20.1388888889vw, 290px);
 }
 .footer.is-02, .footer.is-03 {
-  padding-bottom: min(18.0555555556vw, 260px);
+  padding-bottom: min(14.9305555556vw, 215px);
 }
 
 .footer_nav {
@@ -494,6 +502,12 @@ sub {
   width: min(13.6111111111vw, 196px);
   top: min(9.0972222222vw, 131px);
   right: min(1.1805555556vw, 17px);
+}
+.tab_content_01 .main_image .txt .link {
+  text-decoration: underline;
+}
+.tab_content_01 .main_image .txt .link:hover {
+  text-decoration: none;
 }
 .tab_content_01 .box_fee {
   display: flex;
@@ -1147,6 +1161,22 @@ sub {
   top: min(1.3888888889vw, 20px);
   right: min(-1.5972222222vw, -23px);
 }
+.tab_content_03 .main_image .note {
+  position: absolute;
+  top: min(22.9166666667vw, 330px);
+  right: min(19.5833333333vw, 282px);
+  font-size: min(1.1111111111vw, 16px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000000;
+}
+.tab_content_03 .main_image .note_link {
+  color: #2D287D;
+  text-decoration: underline;
+}
+.tab_content_03 .main_image .note_link:hover {
+  text-decoration: none;
+}
 .tab_content_03 .box_fee_wrap {
   padding: min(5.5555555556vw, 80px) min(8.3333333333vw, 120px);
   position: relative;
@@ -1316,7 +1346,7 @@ sub {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: auto;
-  padding: min(3.4722222222vw, 50px);
+  padding: min(1.7361111111vw, 25px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1404,6 +1434,12 @@ sub {
   }
   .header {
     padding: 6.6157760814vw 7.6335877863vw 6.3613231552vw;
+  }
+  .header.is-scale {
+    padding: 4.631043257vw 5.3435114504vw 4.4529262087vw;
+  }
+  .header.is-scale .header_logo {
+    width: 26.3613231552vw;
   }
   .header_logo {
     width: 37.6590330789vw;
@@ -1972,9 +2008,6 @@ sub {
   }
   .tab_content_03 {
     padding-bottom: 17.8117048346vw;
-  }
-  .tab_content_03 .main_image {
-    margin-bottom: 3.8167938931vw;
   }
   .tab_content_03 .main_image .icon_01 {
     width: 38.4223918575vw;
