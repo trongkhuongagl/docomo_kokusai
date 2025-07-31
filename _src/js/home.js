@@ -1,4 +1,6 @@
-// Header
+/*=============================
+  Header Scale
+===============================*/
 document.addEventListener('DOMContentLoaded', function () {
   function handleScrollHeader() {
     const header = document.querySelector('.header');
@@ -13,40 +15,79 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', handleScrollHeader);
 });
 
-// Tabs
+/*=============================
+  Tabs
+===============================*/
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.tab_button');
   const contents = document.querySelectorAll('.tab_content');
+  const tabWrap = document.querySelector('.js_tab_wrap');
+  const header = document.querySelector('.header');
 
-  buttons.forEach((button, index) => {
+  function activateTab(tabId) {
+    const button = document.querySelector(`.tab_button[data-tab="${tabId}"]`);
+    const content = document.getElementById(tabId);
+    if (!button || !content) return;
+
+    // Remove all active states
+    buttons.forEach(btn => btn.classList.remove('active'));
+    contents.forEach(ct => ct.classList.remove('active'));
+    document.querySelectorAll('.navi_under').forEach(menu => menu.classList.remove('active'));
+
+    // Activate the target tab and content
+    button.classList.add('active');
+    content.classList.add('active');
+
+    // Show fixed menu
+    const index = Array.from(buttons).indexOf(button);
+    const naviId = `navi0${index + 1}`;
+    const navi = document.getElementById(naviId);
+    if (navi) navi.classList.add('active');
+
+    // Update footer class
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.classList.remove('is-01', 'is-02', 'is-03');
+      footer.classList.add(`is-0${index + 1}`);
+    }
+
+    // Scroll to tabWrap with offset
+    const offsetTop = tabWrap.getBoundingClientRect().top + window.scrollY;
+    const offset = header ? (header.offsetHeight * 1.3) : 0;
+    window.scrollTo({
+      top: offsetTop - offset,
+      behavior: 'smooth'
+    });
+  }
+
+  // On click
+  buttons.forEach(button => {
     button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      contents.forEach(content => content.classList.remove('active'));
-      document.querySelectorAll('.navi_under').forEach(menu => menu.classList.remove('active'));
-
-      // Display corresponding content tab
-      button.classList.add('active');
-      document.getElementById(button.dataset.tab).classList.add('active');
-
-      // Show the corresponding fixed menu
-      const naviId = `navi0${index + 1}`;
-      const navi = document.getElementById(naviId);
-      if (navi) {
-        navi.classList.add('active');
-      }
-
-      // Add class to corresponding footer
-      const footer = document.querySelector('footer');
-      if (footer) {
-        footer.classList.remove('is-01', 'is-02', 'is-03');
-        const footerClass = `is-0${index + 1}`;
-        footer.classList.add(footerClass);
-      }
+      const tabId = button.dataset.tab;
+      history.pushState(null, '', `#${tabId}`);
+      activateTab(tabId);
     });
   });
+
+  // On hashchange (handle when URL changes manually)
+  window.addEventListener('hashchange', () => {
+    const tabId = window.location.hash.replace('#', '');
+    if (tabId) {
+      activateTab(tabId);
+    }
+  });
+
+  // On page load with hash
+  const initialTab = window.location.hash.replace('#', '');
+  if (initialTab) {
+    // Slight delay to wait for DOM painting
+    setTimeout(() => activateTab(initialTab), 50);
+  }
 });
 
-// Animation 
+/*=============================
+  Animation Fade Up
+===============================*/
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".js-anima-up");
   let delayIndex = 0;
@@ -75,8 +116,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-// Navigation Under
+/*=============================
+  Navigation Under
+===============================*/
 document.addEventListener('DOMContentLoaded', () => {
   const naviContainer = document.querySelector('.navi_under_container');
   const headerHeight = document.querySelector('.header').offsetHeight;
@@ -117,4 +159,3 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', toggleNaviContainer);
   window.addEventListener('resize', toggleNaviContainer);
 });
-
