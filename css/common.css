@@ -311,10 +311,16 @@ sub {
 }
 
 .sec_banner {
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   padding: 51px 0;
+}
+.sec_banner .title {
+  font-size: min(1.6666666667vw, 24px);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: min(2.4305555556vw, 35px);
 }
 
 .tab_heading {
@@ -1480,7 +1486,11 @@ sub {
     padding-top: 26.2086513995vw;
   }
   .sec_banner {
-    padding: 13.7404580153vw 5.0890585242vw;
+    padding: 8.9058524173vw 5.0890585242vw;
+  }
+  .sec_banner .title {
+    font-size: 6.106870229vw;
+    margin-bottom: 2.5445292621vw;
   }
   .tab_heading {
     justify-content: space-between;
@@ -2158,7 +2168,7 @@ sub {
     padding-top: min(6.6666666667vw, 96px);
   }
   .sec_banner {
-    max-width: min(41.6666666667vw, 600px);
+    max-width: min(69.4444444444vw, 1000px);
   }
 }
 /*# sourceMappingURL=../sourcemaps/css/common.css.map */

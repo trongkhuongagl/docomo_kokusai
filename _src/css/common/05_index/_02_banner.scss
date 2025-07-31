@@ -6,16 +6,27 @@
 // Banner
 //
 .sec_banner {
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   padding: 51px 0;
-  
+
   @include mq('small') {
-    padding: vw-s(54) vw-s(20);
+    padding: vw-s(35) vw-s(20);
   }
 
   @include mq('medium2') {
-    max-width: vw-min(600);
+    max-width: vw-min(1000);
+  }
+
+  .title {
+    font-size: vw-min(24);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: vw-min(35);
+    @include mq('small') {
+      @include fz-s(24);
+      margin-bottom: vw-s(10);
+    }
   }
 }
