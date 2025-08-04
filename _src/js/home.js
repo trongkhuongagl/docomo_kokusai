@@ -18,6 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
 /*=============================
   Tabs
 ===============================*/
+// Prevent browser from auto-scrolling when loading hash
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.tab_button');
   const contents = document.querySelectorAll('.tab_content');
