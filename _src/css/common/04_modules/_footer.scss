@@ -54,6 +54,8 @@
 
     @include mq('small') {
       top: vw-s(1);
+      width: vw-s(21);
+      height: vw-s(15);
     }
   }
 
