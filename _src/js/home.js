@@ -24,7 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const tabWrap = document.querySelector('.js_tab_wrap');
   const header = document.querySelector('.header');
 
-  function activateTab(tabId) {
+  // Save current hash
+  const initialHash = window.location.hash;
+  if (initialHash) {
+    // Delete hash so browser doesn't auto scroll
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+
+  function activateTab(tabId, scrollToTab = true) {
     const button = document.querySelector(`.tab_button[data-tab="${tabId}"]`);
     const content = document.getElementById(tabId);
     if (!button || !content) return;
@@ -52,12 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Scroll to tabWrap with offset
-    const offsetTop = tabWrap.getBoundingClientRect().top + window.scrollY;
-    const offset = header ? (header.offsetHeight * 1.3) : 0;
-    window.scrollTo({
-      top: offsetTop - offset,
-      behavior: 'smooth'
-    });
+    if (scrollToTab) {
+      const offsetTop = tabWrap.getBoundingClientRect().top + window.scrollY;
+      const offset = header ? header.offsetHeight * 1.3 : 0;
+      window.scrollTo({
+        top: offsetTop - offset,
+        behavior: 'smooth'
+      });
+    }
   }
 
   // On click
@@ -65,23 +74,24 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', () => {
       const tabId = button.dataset.tab;
       history.pushState(null, '', `#${tabId}`);
-      activateTab(tabId);
+      activateTab(tabId, true);
     });
   });
 
-  // On hashchange (handle when URL changes manually)
+  // On hashchange
   window.addEventListener('hashchange', () => {
     const tabId = window.location.hash.replace('#', '');
-    if (tabId) {
-      activateTab(tabId);
-    }
+    if (tabId) activateTab(tabId, false);
   });
 
   // On page load with hash
-  const initialTab = window.location.hash.replace('#', '');
-  if (initialTab) {
-    // Slight delay to wait for DOM painting
-    setTimeout(() => activateTab(initialTab), 50);
+  if (initialHash) {
+    const initialTab = initialHash.replace('#', '');
+    setTimeout(() => {
+      activateTab(initialTab, false);
+      history.replaceState(null, '', initialHash);
+      window.scrollTo({ top: 0 });
+    }, 50);
   }
 });
 
@@ -122,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', () => {
   const naviContainer = document.querySelector('.navi_under_container');
   const headerHeight = document.querySelector('.header').offsetHeight;
-  let offsetTopMainImage = document.querySelector('#tab1 .js_main_image').offsetTop;
+  let offsetTopMainImage = document.querySelector('#new_plan .js_main_image').offsetTop;
   const tabButtons = document.querySelectorAll('.tab_button');
 
   if (!naviContainer || !headerHeight || !offsetTopMainImage || !tabButtons) return;
