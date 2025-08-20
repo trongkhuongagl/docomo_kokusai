@@ -436,6 +436,9 @@ sub {
 .tab_content .main_image_desc .txt_sub {
   display: flex;
 }
+.tab_content .main_image_desc .txt_sub.is-no-flex {
+  display: block;
+}
 .tab_content .main_image_desc .txt_02 {
   padding-left: min(2.8472222222vw, 41px);
 }

@@ -179,6 +179,9 @@
           color: #000000;
           &_sub {
             display: flex;
+            &.is-no-flex {
+              display: block;
+            }
           }
           &_02 {
             padding-left: vw-min(41);
