@@ -263,7 +263,7 @@ sub {
   background: #3C3C3C;
   color: #FFFFFF;
   text-align: center;
-  padding: min(5.9722222222vw, 86px) min(0.6944444444vw, 10px) min(20.1388888889vw, 290px);
+  padding: min(5.9722222222vw, 86px) min(0.6944444444vw, 10px) min(18.3333333333vw, 264px);
 }
 .footer.is-02, .footer.is-03 {
   padding-bottom: min(14.9305555556vw, 215px);
@@ -1390,7 +1390,7 @@ sub {
   color: #fff;
   line-height: 1.1;
   text-align: center;
-  margin-bottom: min(3.2638888889vw, 47px);
+  margin-bottom: min(1.3888888889vw, 20px);
 }
 .navi_under .button_list {
   display: flex;
@@ -1453,7 +1453,7 @@ sub {
   }
   .footer {
     text-align: left;
-    padding: 15.0127226463vw 16.0305343511vw 50.8905852417vw 12.7226463104vw;
+    padding: 15.0127226463vw 16.0305343511vw 44.0203562341vw 12.7226463104vw;
   }
   .footer.is-02, .footer.is-03 {
     padding-bottom: 38.1679389313vw;
@@ -2141,7 +2141,7 @@ sub {
   }
   .navi_under .button_title {
     font-size: 3.3078880407vw;
-    margin-bottom: 9.4147582697vw;
+    margin-bottom: 2.5445292621vw;
   }
   .navi_under .button_list {
     gap: 1.272264631vw;

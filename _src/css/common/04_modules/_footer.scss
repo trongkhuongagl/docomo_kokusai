@@ -10,7 +10,7 @@
   background: #3C3C3C;
   color: #FFFFFF;
   text-align: center;
-  padding: vw-min(86) vw-min(10) vw-min(290);
+  padding: vw-min(86) vw-min(10) vw-min(264);
   &.is-02,
   &.is-03 {
     padding-bottom: vw-min(215);
@@ -18,7 +18,7 @@
 
   @include mq('small') {
     text-align: left;
-    padding: vw-s(59) vw-s(63) vw-s(200) vw-s(50);
+    padding: vw-s(59) vw-s(63) vw-s(173) vw-s(50);
 
     &.is-02,
     &.is-03 {

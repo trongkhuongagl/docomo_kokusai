@@ -69,11 +69,11 @@
         color: #fff;
         line-height: 1.1;
         text-align: center;
-        margin-bottom: vw-min(47);
+        margin-bottom: vw-min(20);
   
         @include mq('small') {
           font-size: vw-s(13);
-          margin-bottom: vw-s(37);
+          margin-bottom: vw-s(10);
         }
       }
       &_list {
