@@ -562,7 +562,7 @@ sub {
 }
 .tab_content_01 .box_fee_item.is-gold .price_package.is-one-col.is-gold {
   margin-top: min(2.9166666667vw, 42px);
-  margin-bottom: min(0.3472222222vw, 5px);
+  margin-bottom: 0;
 }
 .tab_content_01 .box_fee_item .logo {
   margin: 0 auto;
@@ -571,7 +571,7 @@ sub {
   margin-bottom: min(3.0555555556vw, 44px);
 }
 .tab_content_01 .box_fee_item .price_package.is-red {
-  margin-bottom: min(0.3472222222vw, 5px);
+  margin-bottom: 0;
 }
 .tab_content_01 .box_fee_item .price_package.is-red .title {
   background-color: #D00F31;
@@ -653,9 +653,10 @@ sub {
   transform: translateY(min(-0.4861111111vw, -7px));
 }
 .tab_content_01 .box_fee_item .price_desc {
-  font-size: min(1.1111111111vw, 16px);
-  font-weight: 600;
-  margin-bottom: min(3.0555555556vw, 44px);
+  font-size: min(1.6666666667vw, 24px);
+  font-weight: 700;
+  margin-top: min(2.0833333333vw, 30px);
+  margin-bottom: min(2.0833333333vw, 30px);
 }
 .tab_content_01 .box_fee_item .price_list.is-red .heading {
   color: #D00F31;
@@ -1636,10 +1637,6 @@ sub {
   }
   .tab_content_01 .box_fee_item.is-gold .price_package.is-one-col.is-gold {
     margin-top: 10.6870229008vw;
-    margin-bottom: 1.272264631vw;
-  }
-  .tab_content_01 .box_fee_item .price_package.is-red {
-    margin-bottom: 1.272264631vw;
   }
   .tab_content_01 .box_fee_item .price_package.is-red .title {
     padding: 1.7811704835vw;
@@ -1689,8 +1686,8 @@ sub {
     transform: translateY(-1.272264631vw);
   }
   .tab_content_01 .box_fee_item .price_desc {
-    font-size: 4.0712468193vw;
-    font-weight: 600;
+    font-size: 6.106870229vw;
+    margin-top: 7.6335877863vw;
     margin-bottom: 7.6335877863vw;
   }
   .tab_content_01 .box_fee_item .price_list .heading {
