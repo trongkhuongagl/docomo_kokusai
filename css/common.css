@@ -655,6 +655,7 @@ sub {
 .tab_content_01 .box_fee_item .price_desc {
   font-size: min(1.6666666667vw, 24px);
   font-weight: 700;
+  text-align: center;
   margin-top: min(2.0833333333vw, 30px);
   margin-bottom: min(2.0833333333vw, 30px);
 }

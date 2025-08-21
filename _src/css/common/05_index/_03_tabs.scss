@@ -588,6 +588,7 @@
           .price_desc {
             font-size: vw-min(24);
             font-weight: 700;
+            text-align: center;
             margin-top: vw-min(30);
             margin-bottom: vw-min(30);
             @include mq('small') {
