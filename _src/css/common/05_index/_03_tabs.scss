@@ -427,11 +427,12 @@
               }
             }
             .price_package.is-one-col.is-gold {
-              margin-bottom: 0;
               margin-top: vw-min(42);
+              margin-bottom: vw-min(5);
 
               @include mq('small') {
                 margin-top: vw-s(42);
+                margin-bottom: vw-s(5);
               }
             }
           }
@@ -440,6 +441,10 @@
           }
           .price_package {
             &.is-red {
+              margin-bottom: vw-min(5);
+              @include mq('small') {
+                margin-bottom: vw-s(5);
+              }
               .title {
                 background-color: #D00F31;
                 padding: vw-min(15);
@@ -457,9 +462,6 @@
               .cost {
                 color: #D00F31;
               }
-              @include mq('small') {
-                margin-bottom: 0;
-              }
             }
             &.is-gold {
               .title {
@@ -471,7 +473,7 @@
               }
               .item {
                 border-color: #806500;
-                min-height: vw-min(104);
+                min-height: vw-min(111);
               }
               .cost {
                 color: #806500;
@@ -586,6 +588,16 @@
                 font-size: vw-s(10);
                 transform: translateY(vw-s(-5));
               }
+            }
+          }
+          .price_desc {
+            font-size: vw-min(16);
+            font-weight: 600;
+            margin-bottom: vw-min(44);
+            @include mq('small') {
+              font-size: vw-s(16);
+              font-weight: 600;
+              margin-bottom: vw-s(30);
             }
           }
           .price_list {

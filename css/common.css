@@ -561,14 +561,17 @@ sub {
   margin-bottom: min(3.2638888889vw, 47px);
 }
 .tab_content_01 .box_fee_item.is-gold .price_package.is-one-col.is-gold {
-  margin-bottom: 0;
   margin-top: min(2.9166666667vw, 42px);
+  margin-bottom: min(0.3472222222vw, 5px);
 }
 .tab_content_01 .box_fee_item .logo {
   margin: 0 auto;
 }
 .tab_content_01 .box_fee_item .price_package {
   margin-bottom: min(3.0555555556vw, 44px);
+}
+.tab_content_01 .box_fee_item .price_package.is-red {
+  margin-bottom: min(0.3472222222vw, 5px);
 }
 .tab_content_01 .box_fee_item .price_package.is-red .title {
   background-color: #D00F31;
@@ -588,7 +591,7 @@ sub {
 }
 .tab_content_01 .box_fee_item .price_package.is-gold .item {
   border-color: #806500;
-  min-height: min(7.2222222222vw, 104px);
+  min-height: min(7.7083333333vw, 111px);
 }
 .tab_content_01 .box_fee_item .price_package.is-gold .cost {
   color: #806500;
@@ -648,6 +651,11 @@ sub {
   font-size: min(0.6944444444vw, 10px);
   line-height: 1;
   transform: translateY(min(-0.4861111111vw, -7px));
+}
+.tab_content_01 .box_fee_item .price_desc {
+  font-size: min(1.1111111111vw, 16px);
+  font-weight: 600;
+  margin-bottom: min(3.0555555556vw, 44px);
 }
 .tab_content_01 .box_fee_item .price_list.is-red .heading {
   color: #D00F31;
@@ -1628,12 +1636,13 @@ sub {
   }
   .tab_content_01 .box_fee_item.is-gold .price_package.is-one-col.is-gold {
     margin-top: 10.6870229008vw;
+    margin-bottom: 1.272264631vw;
+  }
+  .tab_content_01 .box_fee_item .price_package.is-red {
+    margin-bottom: 1.272264631vw;
   }
   .tab_content_01 .box_fee_item .price_package.is-red .title {
     padding: 1.7811704835vw;
-  }
-  .tab_content_01 .box_fee_item .price_package.is-red {
-    margin-bottom: 0;
   }
   .tab_content_01 .box_fee_item .price_package.is-gold .title {
     padding-bottom: 7.6335877863vw;
@@ -1678,6 +1687,11 @@ sub {
   .tab_content_01 .box_fee_item .price_package .num {
     font-size: 2.5445292621vw;
     transform: translateY(-1.272264631vw);
+  }
+  .tab_content_01 .box_fee_item .price_desc {
+    font-size: 4.0712468193vw;
+    font-weight: 600;
+    margin-bottom: 7.6335877863vw;
   }
   .tab_content_01 .box_fee_item .price_list .heading {
     font-size: 6.106870229vw;
